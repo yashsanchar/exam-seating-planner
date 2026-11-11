@@ -1,0 +1,9 @@
+# The `seating` package needs nothing (standard library only).
+# The API layer (app.py, pdf_import.py) needs:
+fastapi
+uvicorn
+python-multipart
+pdfplumber        # reads text PDFs (student lists, text-layer tables)
+openpyxl          # reads .xlsx files
+# only for running tests/test_api.py:
+httpx

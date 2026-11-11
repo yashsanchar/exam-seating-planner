@@ -1,0 +1,6 @@
+Room ID,Name,Rows,Cols,Blocked Seats,Layout,Available
+R101,Room 101,6,8,,,yes
+R102,Room 102,5,6,1-1;5-6,,yes
+R103,Room 103,4,5,,,yes
+LH1,Lecture Hall 1,,,,11111111/11111111/11011011/11111111/1111,yes
+R204,Room 204 (under repair),5,5,,,no

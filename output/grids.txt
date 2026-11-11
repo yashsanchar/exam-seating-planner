@@ -1,0 +1,141 @@
+========================================================================
+2026-12-01 | Afternoon 02:00 | courses: CS202, EC201
+students: 80
+
+Room R101 (6x8) - 35 students - greedy
+R1  EC201 CS202 EC201 CS202 EC201 CS202 EC201 CS202
+R2  CS202 EC201 CS202 EC201 CS202 EC201 CS202 EC201
+R3  EC201 CS202 EC201 CS202 EC201 CS202 EC201 CS202
+R4  CS202 EC201 CS202 EC201   --  EC201   --  EC201
+R5  EC201   --  EC201   --  EC201   --  EC201   -- 
+R6    --  EC201   --    --    --    --    --    -- 
+
+Room LH1 (5x8) - 25 students - greedy
+R1  EC201 CS202 EC201 CS202 EC201 CS202 EC201 CS202
+R2  CS202 EC201 CS202 EC201 CS202 EC201 CS202 EC201
+R3  EC201 CS202   #   CS202 EC201   #   EC201   -- 
+R4    --  EC201   --  EC201   --  EC201   --  EC201
+R5    --    --    --    --    #     #     #     #  
+
+Room R102 (5x6) - 20 students - greedy
+R1    #   EC201 CS202 EC201 CS202 EC201
+R2  EC201 CS202 EC201 CS202 EC201 CS202
+R3  CS202 EC201 CS202 EC201 CS202 EC201
+R4  EC201   --  EC201   --  EC201   -- 
+R5    --    --    --    --    --    #  
+
+========================================================================
+2026-12-01 | Morning 10:00 | courses: CS201, MA201
+students: 81
+
+Room R101 (6x8) - 47 students - greedy
+R1  CS201 MA201 CS201 MA201 CS201 MA201 CS201 MA201
+R2  MA201 CS201 MA201 CS201 MA201 CS201 MA201 CS201
+R3  CS201 MA201 CS201 MA201 CS201 MA201 CS201 MA201
+R4  MA201 CS201 MA201 CS201 MA201 CS201 MA201 CS201
+R5  CS201 MA201 CS201 MA201 CS201 MA201 CS201 MA201
+R6  MA201 CS201 MA201 CS201 MA201 CS201   --  CS201
+
+Room LH1 (5x8) - 34 students - greedy
+R1  CS201 MA201 CS201 MA201 CS201 MA201 CS201 MA201
+R2  MA201 CS201 MA201 CS201 MA201 CS201 MA201 CS201
+R3  CS201 MA201   #   MA201 CS201   #   CS201 MA201
+R4  MA201 CS201 MA201 CS201 MA201 CS201 MA201 CS201
+R5  CS201 MA201 CS201 MA201   #     #     #     #  
+
+========================================================================
+2026-12-03 | Afternoon 02:00 | courses: CS204, MA202
+students: 80
+
+Room R101 (6x8) - 35 students - greedy
+R1  CS204 MA202 CS204 MA202 CS204 MA202 CS204 MA202
+R2  MA202 CS204 MA202 CS204 MA202 CS204 MA202 CS204
+R3  CS204 MA202 CS204 MA202 CS204 MA202 CS204 MA202
+R4  MA202 CS204 MA202 CS204 MA202 CS204   --  CS204
+R5  CS204   --  CS204   --  CS204   --  CS204   -- 
+R6    --    --    --    --    --    --    --    -- 
+
+Room LH1 (5x8) - 25 students - greedy
+R1  CS204 MA202 CS204 MA202 CS204 MA202 CS204 MA202
+R2  MA202 CS204 MA202 CS204 MA202 CS204 MA202 CS204
+R3  CS204 MA202   #   MA202 CS204   #   CS204   -- 
+R4    --  CS204   --  CS204   --  CS204   --  CS204
+R5    --    --    --    --    #     #     #     #  
+
+Room R102 (5x6) - 20 students - greedy
+R1    #   CS204 MA202 CS204 MA202 CS204
+R2  CS204 MA202 CS204 MA202 CS204 MA202
+R3  MA202 CS204 MA202 CS204 MA202 CS204
+R4  CS204   --  CS204   --  CS204   -- 
+R5    --    --    --    --    --    #  
+
+========================================================================
+2026-12-03 | Morning 10:00 | courses: CS203, HS201
+students: 82
+
+Room R101 (6x8) - 36 students - greedy
+R1  CS203 HS201 CS203 HS201 CS203 HS201 CS203 HS201
+R2  HS201 CS203 HS201 CS203 HS201 CS203 HS201 CS203
+R3  CS203 HS201 CS203 HS201 CS203 HS201 CS203 HS201
+R4  HS201 CS203 HS201 CS203 HS201 CS203 HS201 CS203
+R5  CS203 HS201 CS203 HS201   --    --    --    -- 
+R6    --    --    --    --    --    --    --    -- 
+
+Room LH1 (5x8) - 25 students - greedy
+R1  CS203 HS201 CS203 HS201 CS203 HS201 CS203 HS201
+R2  HS201 CS203 HS201 CS203 HS201 CS203 HS201 CS203
+R3  CS203 HS201   #   HS201 CS203   #   CS203 HS201
+R4  HS201 CS203   --  CS203   --    --    --    -- 
+R5    --    --    --    --    #     #     #     #  
+
+Room R102 (5x6) - 21 students - greedy
+R1    #   CS203 HS201 CS203 HS201 CS203
+R2  CS203 HS201 CS203 HS201 CS203 HS201
+R3  HS201 CS203 HS201 CS203 HS201 CS203
+R4  CS203 HS201 CS203 HS201   --    -- 
+R5    --    --    --    --    --    #  
+
+========================================================================
+2026-12-05 | Afternoon 02:00 | courses: CS206, HS202
+students: 81
+
+Room R101 (6x8) - 35 students - greedy
+R1  HS202 CS206 HS202 CS206 HS202 CS206 HS202 CS206
+R2  CS206 HS202 CS206 HS202 CS206 HS202 CS206 HS202
+R3  HS202 CS206 HS202 CS206 HS202 CS206 HS202 CS206
+R4  CS206 HS202 CS206 HS202 CS206 HS202 CS206 HS202
+R5  HS202   --  HS202   --  HS202   --    --    -- 
+R6    --    --    --    --    --    --    --    -- 
+
+Room LH1 (5x8) - 25 students - greedy
+R1  HS202 CS206 HS202 CS206 HS202 CS206 HS202 CS206
+R2  CS206 HS202 CS206 HS202 CS206 HS202 CS206 HS202
+R3  HS202 CS206   #   CS206 HS202   #   HS202 CS206
+R4    --  HS202   --  HS202   --  HS202   --    -- 
+R5    --    --    --    --    #     #     #     #  
+
+Room R102 (5x6) - 21 students - greedy
+R1    #   HS202 CS206 HS202 CS206 HS202
+R2  CS206   --  HS202 CS206 HS202 CS206
+R3  HS202 CS206   --  HS202 CS206 HS202
+R4  CS206 HS202 CS206   --  HS202 CS206
+R5  HS202   --    --    --    --    #  
+
+========================================================================
+2026-12-05 | Morning 10:00 | courses: CS205, EC202
+students: 71
+
+Room R101 (6x8) - 41 students - greedy
+R1  CS205 EC202 CS205 EC202 CS205 EC202 CS205 EC202
+R2  EC202 CS205 EC202 CS205 EC202 CS205 EC202 CS205
+R3  CS205 EC202 CS205 EC202 CS205 EC202 CS205 EC202
+R4  EC202 CS205 EC202 CS205 EC202 CS205 EC202 CS205
+R5  CS205 EC202 CS205 EC202 CS205 EC202 CS205   -- 
+R6    --  CS205   --  CS205   --    --    --    -- 
+
+Room LH1 (5x8) - 30 students - greedy
+R1  CS205 EC202 CS205 EC202 CS205 EC202 CS205 EC202
+R2  EC202 CS205 EC202 CS205 EC202 CS205 EC202 CS205
+R3  CS205 EC202   #   EC202 CS205   #   CS205 EC202
+R4  EC202 CS205 EC202 CS205 EC202 CS205   --  CS205
+R5  CS205   --    --    --    #     #     #     #  

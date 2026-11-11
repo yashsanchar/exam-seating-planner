@@ -1,0 +1,291 @@
+/* =====================================================================
+   Exam Seating Planner: warm dark theme.
+   TWEAK THE LOOK HERE: every colour, radius, font and timing is a variable below.
+   ===================================================================== */
+:root{
+  /* surfaces (dark warm near-black) */
+  --bg:#0c0a08; --surface:#1a1610; --surface-2:#231e15; --surface-3:#2b251b;
+  --line:#2e281d; --line-2:#443b2b;
+  /* text */
+  --text:#f6ecd9; --muted:#b4a68f;
+  /* accent (amber) and status colours */
+  --accent:#e9a455; --accent-ink:#1b1206; --accent-soft:rgba(233,164,85,.13); --focus:#f3be7d;
+  --ok:#74cf97; --ok-bg:rgba(116,207,151,.12); --bad:#ff8f84; --bad-bg:rgba(255,120,105,.12);
+  --warn:#f2c660; --warn-bg:rgba(242,198,96,.11);
+  /* course colours in seats (lightness of background / border / text; the hue changes per course) */
+  --cc-bg:21%; --cc-bd:47%; --cc-fg:88%;
+  /* accent used for TEXT and small details (the light theme needs a darker amber here; --accent stays the fill colour) */
+  --accent-text:#e9a455; --accent-line:rgba(233,164,85,.35); --accent-line-2:rgba(233,164,85,.6);
+  --ok-line:rgba(116,207,151,.5); --ok-ink:#06160d; --bad-line:rgba(255,143,132,.4); --warn-line:rgba(242,198,96,.35); --warn-line-soft:rgba(242,198,96,.3);
+  /* surfaces that were hard-coded before: top bar glass, blocked-seat stripes, skeleton shimmer, table row hover */
+  --nav-bg:rgba(26,22,16,.88); --hatch-a:#2a241a; --hatch-b:#14110c; --shimmer:rgba(246,236,217,.07); --row-hover:rgba(246,236,217,.025);
+  /* shape */
+  --r-lg:28px; --r-md:16px; --r-sm:12px; --r-btn:14px;
+  --shadow:0 18px 40px -22px rgba(0,0,0,.8); --glow:0 8px 26px -10px rgba(233,164,85,.65);
+  /* type */
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  /* motion: one easing and three durations used everywhere */
+  --ease:cubic-bezier(.22,1,.36,1); --t-fast:150ms; --t:250ms; --t-slow:350ms;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:110px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+h2{font-size:1.4rem;margin-bottom:.3rem} h3{font-size:1.1rem}
+b,strong{font-weight:600}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.muted{color:var(--muted);margin:.2rem 0 1.1rem}
+.accent{color:var(--accent-text)}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:0;z-index:10;padding-top:16px;pointer-events:none}
+.navbar{pointer-events:auto;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:10px 16px;
+  background:var(--nav-bg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--line);border-radius:var(--r-lg);padding:10px 12px 10px 22px;box-shadow:var(--shadow)}
+.brand{display:flex;align-items:center;gap:11px;color:var(--accent-text);text-decoration:none;font-weight:800;letter-spacing:.01em;border-radius:var(--r-sm)}
+.brand:focus-visible,.theme-toggle:focus-visible,.tabs button:focus-visible,.btn:focus-visible,.sess:focus-visible,.edge:focus-visible,.cell:focus-visible,.seat:focus-visible,.x:focus-visible,.toast-x:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.brand-mark{width:30px;height:30px;fill:var(--accent-text)} .brand-mark .dim{opacity:.4}
+.brand-name{font-size:1.05rem}
+.tabs{position:relative;display:flex;justify-self:end;max-width:100%;gap:2px;overflow-x:auto;scrollbar-width:none;padding:2px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;font:600 .95rem/1 var(--sans);white-space:nowrap;
+  background:none;border:0;border-radius:var(--r-btn);padding:12px 16px;color:var(--muted);cursor:pointer;
+  transition:color var(--t) var(--ease),transform var(--t-fast) var(--ease)}
+.tabs button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tabs button:hover{color:var(--text)}
+.tabs button:active{transform:scale(.96)}
+.tabs button[aria-selected=true]{color:var(--accent-ink)}
+/* the sliding amber pill behind the active tab; position and size are set by motion.js */
+.tab-ind{position:absolute;z-index:0;left:0;top:2px;height:calc(100% - 4px);width:0;border-radius:var(--r-btn);background:var(--accent);transform-origin:left center}
+
+/* ---------- page heading (a visually hidden h1 for screen readers; the visible part is just the eyebrow) ---------- */
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.hero{padding-top:28px;padding-bottom:14px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line-2);background:var(--surface);border-radius:99px;padding:7px 16px;
+  color:var(--accent-text);font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.eyebrow svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
+main{padding-bottom:56px;min-height:60vh}
+.panel[hidden]{display:none}
+
+/* ---------- light / dark toggle: the dark theme shows the sun (click = go light), the light theme shows the moon.
+   The two icons swap with transform + opacity only (--t, --ease). ---------- */
+.theme-toggle{position:relative;display:inline-grid;place-items:center;width:44px;height:44px;padding:0;color:var(--accent-text);background:var(--surface-2);
+  border:1px solid var(--line-2);border-radius:var(--r-btn);cursor:pointer;transition:transform var(--t-fast) var(--ease)}
+.theme-toggle:hover{transform:translateY(-1px)} .theme-toggle:active{transform:scale(.94)}
+.theme-toggle svg{grid-area:1/1;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  transition:transform var(--t) var(--ease),opacity var(--t) var(--ease)}
+.theme-toggle .moon{opacity:0;transform:rotate(-70deg) scale(.5)}
+[data-theme=light] .theme-toggle .sun{opacity:0;transform:rotate(70deg) scale(.5)}
+[data-theme=light] .theme-toggle .moon{opacity:1;transform:none}
+
+/* ---------- cards ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;margin-bottom:20px}
+
+/* ---------- buttons. Hover colour change is an overlay fading in (opacity only). ---------- */
+.btn{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 .95rem/1.1 var(--sans);
+  color:var(--text);background:var(--surface-2);border:1px solid var(--line-2);padding:12px 20px;border-radius:var(--r-btn);cursor:pointer;text-decoration:none;
+  transition:transform var(--t-fast) var(--ease)}
+.btn::before{content:"";position:absolute;inset:-1px;border-radius:inherit;background:var(--text);opacity:0;z-index:-1;transition:opacity var(--t-fast) var(--ease)}
+.btn:hover::before{opacity:.08}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);box-shadow:var(--glow)}
+.btn.primary::before{background:#fff} .btn.primary:hover::before{opacity:.2}
+.btn.small{padding:8px 14px;font-size:.85rem;border-radius:var(--r-sm)}
+.btn[disabled],.btn.off{opacity:.45;pointer-events:none}
+.btn[aria-busy=true]{opacity:.85}
+.btn[aria-busy=true]::after{content:"";order:-1;width:14px;height:14px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .7s linear infinite}
+
+/* ---------- form fields ---------- */
+select,input[type=text],input[type=date],textarea{font:inherit;color:var(--text);background:var(--surface-2);border:1px solid var(--line-2);border-radius:var(--r-sm);padding:10px 12px;min-width:0}
+select{min-width:220px}
+select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+input[type=checkbox]{accent-color:var(--accent);width:17px;height:17px}
+textarea{width:100%;resize:vertical;min-height:70px}
+.bar{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;padding:18px 24px}
+.bar label,.fields label,.toolbar label{display:flex;flex-direction:column;gap:5px;font-size:.8rem;color:var(--muted);font-weight:500}
+.fields{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:flex-end;margin:12px 0 16px}
+.fields label.check{flex-direction:row;align-items:center;gap:9px;font-size:.92rem;color:var(--text)}
+.spacer{flex:1}
+.dl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:.85rem}
+
+/* ---------- PDF check screen: what loading the chosen group will do ---------- */
+.group-note{margin:0 0 14px;padding:10px 14px;border:1px solid var(--line-2);border-radius:var(--r-sm);font-size:.9rem}
+.group-note.replace{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn)}
+.group-note.new{background:var(--ok-bg);border-color:var(--ok-line);color:var(--ok)}
+.group-note.none{background:var(--surface-2);color:var(--muted)}
+
+/* ---------- upload cards ---------- */
+.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.file{position:relative;isolation:isolate;display:flex;flex-direction:column;gap:4px;border:1.5px dashed var(--line-2);border-radius:var(--r-md);padding:20px;cursor:pointer;background:var(--surface-2);
+  transition:transform var(--t) var(--ease)}
+.file::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--accent-soft);opacity:0;z-index:-1;transition:opacity var(--t) var(--ease)}
+.file::after{content:"";position:absolute;inset:-1.5px;border:1.5px solid var(--accent-text);border-radius:inherit;opacity:0;pointer-events:none;transition:opacity var(--t) var(--ease)}
+.file:hover,.file:focus-within{transform:translateY(-2px)}
+.file:hover::before,.file:focus-within::before,.file.drag::before,.file:hover::after,.file:focus-within::after,.file.drag::after{opacity:1}
+.file.drag{transform:scale(1.025)}
+.file:focus-within{outline:2px solid var(--focus);outline-offset:3px}
+.file input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.file-title{font-weight:700}.hint{font-size:.8rem;color:var(--muted)}
+.file-name{margin-top:8px;font-size:.88rem;color:var(--accent-text);word-break:break-all;font-weight:500}
+.file.has{border-style:solid;border-color:var(--ok-line)}
+.file.has .file-name{color:var(--ok)}
+.file.has .file-name::before{content:"✓";display:inline-grid;place-items:center;width:19px;height:19px;margin-right:8px;border-radius:50%;background:var(--ok);color:var(--ok-ink);font-size:.7rem;font-weight:800;animation:pop var(--t) var(--ease)}
+.row{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+
+/* ---------- alerts (inline) and toasts ---------- */
+.alert{border:1px solid;border-radius:var(--r-md);padding:13px 18px;margin-bottom:18px}
+.alert.error{background:var(--bad-bg);border-color:var(--bad-line);color:var(--bad)}
+.alert.info{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent-text)}
+.alert.warn{background:var(--warn-bg);border-color:var(--warn-line);color:var(--warn)}
+.toasts{position:fixed;right:24px;bottom:24px;z-index:50;display:flex;flex-direction:column;gap:10px;width:min(430px,calc(100vw - 24px));pointer-events:none}
+.toast{pointer-events:auto;display:flex;gap:12px;align-items:flex-start;background:var(--surface-3);border:1px solid var(--line-2);border-left:4px solid var(--accent-text);border-radius:var(--r-md);padding:14px 10px 14px 16px;box-shadow:var(--shadow)}
+.toast.error{border-left-color:var(--bad)} .toast.warn{border-left-color:var(--warn)}
+.toast p{margin:0;flex:1;font-size:.93rem}
+.toast-x{font:inherit;font-size:1.2rem;line-height:1;background:none;border:0;color:var(--muted);cursor:pointer;padding:2px 8px;border-radius:8px}
+.toast-x:hover{color:var(--text)}
+
+/* ---------- stats, tables ---------- */
+.stats{display:flex;flex-wrap:wrap;gap:10px 40px;margin:8px 0 20px}
+.stat{color:var(--muted);font-size:.9rem}
+.stat b{display:block;font-size:2.3rem;font-weight:800;line-height:1.1;letter-spacing:-.03em;color:var(--accent-text);font-variant-numeric:tabular-nums}
+.stat b.bad{color:var(--bad)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-md)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--surface-2);font-weight:600;color:var(--muted);white-space:nowrap;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--row-hover)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:22px}
+.warns{margin:12px 0 0;padding:12px 16px 12px 32px;background:var(--warn-bg);border:1px solid var(--warn-line-soft);border-radius:var(--r-md);color:var(--warn);font-size:.9rem}
+.badge{display:inline-block;padding:2px 11px;border-radius:99px;font-size:.8rem;font-weight:600}
+.badge.ok{background:var(--ok-bg);color:var(--ok)} .badge.bad{background:var(--bad-bg);color:var(--bad)}
+.badge.warn,.tag-prov{background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn-line-soft)}
+.tag-prov{display:inline-block;margin-left:7px;padding:0 8px;border-radius:99px;font-size:.7rem;font-weight:600;vertical-align:middle}
+.note{font-size:.85rem;color:var(--muted);margin-top:10px} .note.bad{color:var(--bad)}
+
+/* ---------- session / room list and room cards ---------- */
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:22px;align-items:start}
+.layout>*{min-width:0}
+.sessions{display:flex;flex-direction:column;gap:8px;position:sticky;top:100px}
+.sess{position:relative;isolation:isolate;font:inherit;font-weight:500;text-align:left;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:var(--r-md);padding:11px 14px;cursor:pointer;color:var(--text);
+  transition:transform var(--t-fast) var(--ease)}
+.sess::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--accent-soft);opacity:0;z-index:-1;transition:opacity var(--t-fast) var(--ease)}
+.sess:hover{transform:translateX(3px)} .sess:hover::before,.sess[aria-current=true]::before{opacity:1}
+.sess:active{transform:scale(.98)}
+.sess.bad{border-left-color:var(--bad)} .sess small{display:block;color:var(--muted);font-weight:400}
+.sess[aria-current=true]{border-color:var(--accent-text);border-left-color:var(--accent-text)}
+.sess.bad[aria-current=true]{border-left-color:var(--bad)}
+.sess-head{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;justify-content:space-between;margin-bottom:10px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px;font-size:.85rem;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line-2);background:var(--surface);border-radius:99px;padding:5px 13px;transition:opacity var(--t-fast) var(--ease)}
+.sw{width:14px;height:14px;border-radius:4px;border:1px solid;display:inline-block}
+.sw.blocked{background:repeating-linear-gradient(45deg,var(--hatch-a),var(--hatch-a) 3px,var(--hatch-b) 3px,var(--hatch-b) 6px);border-color:var(--line-2)}
+.sw.empty{background:transparent;border:1.5px dashed var(--line-2)}
+.room{margin-bottom:20px}
+.room-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
+.room-head small{color:var(--muted)}
+.board{margin:14px 0 12px 34px;text-align:center;font-size:.72rem;font-weight:600;color:var(--muted);border-top:3px solid var(--accent-text);border-radius:3px;padding-top:5px;letter-spacing:.1em}
+.gridscroll{overflow-x:auto;padding:4px 4px 8px}
+.grid{display:grid;gap:6px;width:max-content}
+.rn,.cn{font-size:.72rem;color:var(--muted);display:flex;align-items:center;justify-content:center}
+.seat{width:74px;height:50px;border-radius:10px;border:1px solid;display:flex;flex-direction:column;align-items:center;justify-content:center;font:inherit;line-height:1.2;padding:2px;cursor:default;overflow:hidden;transition:transform var(--t-fast) var(--ease),opacity var(--t-fast) var(--ease)}
+.seat b{font-size:.78rem;font-weight:700}.seat span{font-size:.68rem;opacity:.85}
+.seat.blocked{background:repeating-linear-gradient(45deg,var(--hatch-a),var(--hatch-a) 4px,var(--hatch-b) 4px,var(--hatch-b) 8px);border-color:var(--line)}
+.seat.empty{background:transparent;border:1.5px dashed var(--line-2)}
+.seat.clash{box-shadow:0 0 0 3px var(--bad)}
+/* course colour: only the hue (--h) is set per course in app.js; lightness comes from the tokens above */
+.cc{background:hsl(var(--h) 42% var(--cc-bg));border-color:hsl(var(--h) 55% var(--cc-bd));color:hsl(var(--h) 80% var(--cc-fg))}
+.seat.hl{transform:scale(1.07);z-index:1} .dim{opacity:.2}
+
+/* ---------- room editor ---------- */
+.edit-grid{display:grid;gap:5px;width:max-content;user-select:none;touch-action:none}
+.cell{width:38px;height:32px;border-radius:8px;border:1px solid var(--accent-line-2);background:var(--accent-soft);cursor:pointer;padding:0;transition:transform var(--t-fast) var(--ease)}
+.cell:hover{transform:scale(1.1)} .cell:active{transform:scale(.92)}
+.cell.off{background:repeating-linear-gradient(45deg,var(--hatch-a),var(--hatch-a) 4px,var(--hatch-b) 4px,var(--hatch-b) 8px);border-color:var(--line-2)}
+.edge{font:inherit;font-size:.72rem;color:var(--muted);background:none;border:0;padding:0;cursor:pointer;border-radius:6px}
+.edge:hover{color:var(--accent-text);background:var(--accent-soft)}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+.dirty{color:var(--warn);font-size:.85rem;font-weight:500}
+.chip .x{font:inherit;border:0;background:none;color:var(--muted);cursor:pointer;font-size:1rem;padding:0 4px;border-radius:6px}.chip .x:hover{color:var(--bad)}
+
+/* ---------- timetable and previews ---------- */
+.tt td{padding:6px 7px;vertical-align:middle}.tt input[type=text],.tt input[type=date]{width:100%;background:var(--bg);padding:8px 10px}
+.tt .c-date{min-width:160px}.tt .c-slot{min-width:150px}.tt .c-code{min-width:120px}.tt .c-name{min-width:240px}.tt .c-grp{min-width:130px}
+.tt .x{font:inherit;border:0;background:none;color:var(--muted);cursor:pointer;font-size:1.2rem;padding:2px 9px;border-radius:8px}.tt .x:hover{color:var(--bad);background:var(--bad-bg)}
+details.notes{margin-top:16px;font-size:.9rem;color:var(--muted)}details.notes summary{cursor:pointer;color:var(--accent-text);font-weight:600}
+details.notes ul{margin:8px 0 0;padding-left:22px}
+.preview .prev-tbl{max-height:460px;overflow:auto}
+.preview .off-row td{opacity:.5}.preview .note-cell{color:var(--warn);font-size:.85rem}
+.bars td.t{white-space:nowrap}.bar-t{display:block;height:6px;border-radius:3px;background:var(--accent-text);margin-top:5px;min-width:2px}
+
+/* ---------- empty state and loading skeletons ---------- */
+.empty-state{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:520px;margin:20px auto;padding:36px 28px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg)}
+.empty-ico{display:grid;place-items:center;width:78px;height:78px;border-radius:50%;background:var(--surface-2);color:var(--accent-text);margin-bottom:18px}
+.empty-ico svg{width:34px;height:34px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.empty-state h3{font-size:1.25rem} .empty-state p{color:var(--muted);margin:6px 0 20px}
+.empty-msg{text-align:center;color:var(--muted);padding:40px 10px}
+.spinner{display:inline-block;width:22px;height:22px;border:3px solid var(--line-2);border-top-color:var(--accent-text);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-right:10px}
+.skel{position:relative;overflow:hidden;background:var(--surface-2);border-radius:var(--r-sm)}
+.skel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,var(--shimmer),transparent);animation:shimmer 1.3s linear infinite}
+.skel-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;margin-bottom:20px}
+
+/* ---------- keyframes (transform / opacity only) ---------- */
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+@keyframes pop{from{transform:scale(.3);opacity:0}60%{transform:scale(1.2)}to{transform:scale(1);opacity:1}}
+
+/* ---------- phone and projector ---------- */
+@media(max-width:980px){
+  .navbar{grid-template-columns:minmax(0,1fr) auto}
+  .brand{grid-column:1;grid-row:1} .theme-toggle{grid-column:2;grid-row:1} .tabs{grid-column:1/-1;grid-row:2;justify-self:stretch}
+}
+@media(max-width:860px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .sessions{flex-direction:row;overflow-x:auto;position:static;padding-bottom:8px}
+  .sess{min-width:160px;flex:none}
+  .spacer{display:none}
+}
+@media(max-width:620px){
+  .wrap{padding:0 14px}
+  .top{padding-top:10px}
+  .navbar{border-radius:22px;padding:10px 10px 8px 16px}
+  .tabs{width:100%}.tabs button{padding:11px 13px}.tabs button svg{display:none}
+  .hero{padding-top:20px;padding-bottom:10px}
+  .card{padding:18px;border-radius:22px}
+  .bar{padding:16px 18px}.bar label{flex:1 1 100%}select{min-width:0;width:100%}
+  .toasts{right:12px;bottom:12px}
+  .stat b{font-size:1.9rem}
+}
+@media(min-width:1500px){html{font-size:18px}.wrap{max-width:1360px}}   /* big projector screens */
+
+/* ---------- light theme: the same tokens as the dark theme, with light values. Switched by data-theme="light" on <html>
+   (set by the little script in <head> and by the toggle button). ---------- */
+:root[data-theme="light"]{
+  --bg:#f6efe2; --surface:#fffdf8; --surface-2:#f7f0e2; --surface-3:#ffffff;
+  --line:#e6dbc6; --line-2:#c9b995;
+  --text:#2a2013; --muted:#66573f;
+  --accent:#e9a455; --accent-ink:#1b1206; --accent-soft:rgba(176,104,10,.12); --focus:#8f5200;
+  --ok:#1b7142; --ok-bg:rgba(27,113,66,.1); --bad:#b3261e; --bad-bg:rgba(179,38,30,.09);
+  --warn:#7d5100; --warn-bg:rgba(160,105,0,.12);
+  --cc-bg:88%; --cc-bd:58%; --cc-fg:20%;
+  --shadow:0 14px 32px -20px rgba(70,45,10,.45); --glow:0 8px 22px -10px rgba(214,140,40,.7);
+  --accent-text:#8a4f00; --accent-line:rgba(138,79,0,.4); --accent-line-2:rgba(138,79,0,.55);
+  --ok-line:rgba(27,113,66,.45); --ok-ink:#ffffff; --bad-line:rgba(179,38,30,.4); --warn-line:rgba(125,81,0,.4); --warn-line-soft:rgba(125,81,0,.3);
+  --nav-bg:rgba(255,253,248,.9); --hatch-a:#e4d8bf; --hatch-b:#f6efe2; --shimmer:rgba(138,79,0,.08); --row-hover:rgba(138,79,0,.045);
+  color-scheme:light;
+}
+
+/* ---------- reduced motion: nothing slides, pops or spins; things just change ---------- */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .btn[aria-busy=true]::after,.spinner{animation:none}
+}
+
+/* ---------- print: light page, dark ink ---------- */
+@media print{
+  :root,:root[data-theme]{--bg:#fff;--surface:#fff;--surface-2:#f3f3f3;--text:#000;--muted:#444;--line:#bbb;--line-2:#999;--accent:#7a4a00;--accent-text:#7a4a00;--hatch-a:#ddd;--hatch-b:#fff;--cc-bg:90%;--cc-bd:55%;--cc-fg:18%;color-scheme:light}
+  .top,.hero,.bar,.sessions,.btn,.dirty,.toasts{display:none}
+  .card{border:0;padding:0;break-inside:avoid}
+}

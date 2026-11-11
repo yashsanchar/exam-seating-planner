@@ -1,0 +1,5089 @@
+{
+  "sessions": [
+    {
+      "date": "2026-12-01",
+      "slot": "Afternoon 02:00",
+      "courses": [
+        "CS202",
+        "EC201"
+      ],
+      "ok": true,
+      "error": null,
+      "warnings": [],
+      "student_count": 80,
+      "rooms": [
+        {
+          "room_id": "R101",
+          "name": "Room 101",
+          "rows": 6,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 42,
+          "students": 35,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS002",
+              "name": "Isha Agrawal",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS003",
+              "name": "Vivaan Verma",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS006",
+              "name": "Vivaan Yadav",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS009",
+              "name": "Kavya Verma",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS015",
+              "name": "Yash Tiwari",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS014",
+              "name": "Rahul Agrawal",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS018",
+              "name": "Vivaan Gupta",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS016",
+              "name": "Vivaan Tiwari",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS025",
+              "name": "Harsh Patel",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS022",
+              "name": "Riya Verma",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS034",
+              "name": "Riya Jain",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS029",
+              "name": "Arjun Yadav",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS042",
+              "name": "Siddharth Yadav",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS032",
+              "name": "Tanvi Gupta",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS051",
+              "name": "Vivaan Agrawal",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS036",
+              "name": "Meera Tiwari",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS039",
+              "name": "Kabir Rathore",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS057",
+              "name": "Sneha Soni",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS044",
+              "name": "Pooja Chouhan",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS065",
+              "name": "Harsh Dubey",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS047",
+              "name": "Priya Jain",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS070",
+              "name": "Diya Patel",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS049",
+              "name": "Ananya Patel",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS077",
+              "name": "Neha Verma",
+              "course": "CS202"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS082",
+              "name": "Riya Joshi",
+              "course": "CS202"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS053",
+              "name": "Riya Tiwari",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS089",
+              "name": "Rahul Sharma",
+              "course": "CS202"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS059",
+              "name": "Aditya Joshi",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS062",
+              "name": "Vivaan Rathore",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS067",
+              "name": "Nikhil Jain",
+              "course": "EC201"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS075",
+              "name": "Pooja Gupta",
+              "course": "EC201"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS079",
+              "name": "Isha Yadav",
+              "course": "EC201"
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS083",
+              "name": "Nikhil Jain",
+              "course": "EC201"
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS086",
+              "name": "Ishaan Verma",
+              "course": "EC201"
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS090",
+              "name": "Neha Dubey",
+              "course": "EC201"
+            },
+            {
+              "row": 6,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            }
+          ]
+        },
+        {
+          "room_id": "LH1",
+          "name": "Lecture Hall 1",
+          "rows": 5,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 30,
+          "students": 25,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS004",
+              "name": "Riya Verma",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS007",
+              "name": "Rohan Sharma",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS008",
+              "name": "Aditya Jain",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS012",
+              "name": "Vivaan Dubey",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS017",
+              "name": "Sneha Jain",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS021",
+              "name": "Kavya Patel",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS023",
+              "name": "Sneha Joshi",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS026",
+              "name": "Arjun Tiwari",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS035",
+              "name": "Shreya Mishra",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS031",
+              "name": "Sneha Sharma",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS054",
+              "name": "Ananya Mishra",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS037",
+              "name": "Meera Mishra",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS064",
+              "name": "Yash Tiwari",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS040",
+              "name": "Shreya Gupta",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS072",
+              "name": "Neha Sharma",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS045",
+              "name": "Siddharth Tiwari",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS052",
+              "name": "Aditya Soni",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS078",
+              "name": "Kabir Chouhan",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS088",
+              "name": "Rahul Agrawal",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS056",
+              "name": "Tanvi Chouhan",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS066",
+              "name": "Meera Joshi",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS071",
+              "name": "Tanvi Verma",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS076",
+              "name": "Isha Jain",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS084",
+              "name": "Diya Agrawal",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS087",
+              "name": "Kabir Patel",
+              "course": "EC201"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": true
+            }
+          ]
+        },
+        {
+          "room_id": "R102",
+          "name": "Room 102",
+          "rows": 5,
+          "cols": 6,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 22,
+          "students": 20,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": true
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS005",
+              "name": "Diya Tiwari",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS001",
+              "name": "Ananya Patel",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS013",
+              "name": "Sneha Verma",
+              "course": "EC201"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS010",
+              "name": "Rahul Verma",
+              "course": "CS202"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS020",
+              "name": "Ishaan Joshi",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS030",
+              "name": "Nikhil Verma",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS024",
+              "name": "Riya Dubey",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS033",
+              "name": "Neha Agrawal",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS028",
+              "name": "Rohan Mishra",
+              "course": "CS202"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS043",
+              "name": "Neha Mishra",
+              "course": "EC201"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS050",
+              "name": "Neha Jain",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS061",
+              "name": "Harsh Verma",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS048",
+              "name": "Kabir Soni",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS068",
+              "name": "Harsh Mishra",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS055",
+              "name": "Nikhil Mishra",
+              "course": "EC201"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS081",
+              "name": "Kavya Dubey",
+              "course": "CS202"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS060",
+              "name": "Neha Rathore",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS069",
+              "name": "Aarav Chouhan",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS080",
+              "name": "Karan Patel",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS085",
+              "name": "Isha Gupta",
+              "course": "EC201"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "slot": "Morning 10:00",
+      "courses": [
+        "CS201",
+        "MA201"
+      ],
+      "ok": true,
+      "error": null,
+      "warnings": [],
+      "student_count": 81,
+      "rooms": [
+        {
+          "room_id": "R101",
+          "name": "Room 101",
+          "rows": 6,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 48,
+          "students": 47,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS003",
+              "name": "Vivaan Verma",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS001",
+              "name": "Ananya Patel",
+              "course": "MA201"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS011",
+              "name": "Riya Jain",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS005",
+              "name": "Diya Tiwari",
+              "course": "MA201"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS013",
+              "name": "Sneha Verma",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS009",
+              "name": "Kavya Verma",
+              "course": "MA201"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS016",
+              "name": "Vivaan Tiwari",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS021",
+              "name": "Kavya Patel",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS024",
+              "name": "Riya Dubey",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS017",
+              "name": "Sneha Jain",
+              "course": "CS201"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS028",
+              "name": "Rohan Mishra",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS019",
+              "name": "Vivaan Yadav",
+              "course": "CS201"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS037",
+              "name": "Meera Mishra",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS023",
+              "name": "Sneha Joshi",
+              "course": "CS201"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS038",
+              "name": "Siddharth Gupta",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS026",
+              "name": "Arjun Tiwari",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS030",
+              "name": "Nikhil Verma",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS043",
+              "name": "Neha Mishra",
+              "course": "MA201"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS032",
+              "name": "Tanvi Gupta",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS046",
+              "name": "Aditya Verma",
+              "course": "MA201"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS034",
+              "name": "Riya Jain",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS048",
+              "name": "Kabir Soni",
+              "course": "MA201"
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS035",
+              "name": "Shreya Mishra",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS054",
+              "name": "Ananya Mishra",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS057",
+              "name": "Sneha Soni",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS040",
+              "name": "Shreya Gupta",
+              "course": "CS201"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS061",
+              "name": "Harsh Verma",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS044",
+              "name": "Pooja Chouhan",
+              "course": "CS201"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS063",
+              "name": "Nikhil Joshi",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS049",
+              "name": "Ananya Patel",
+              "course": "CS201"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS066",
+              "name": "Meera Joshi",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS052",
+              "name": "Aditya Soni",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS058",
+              "name": "Meera Verma",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS069",
+              "name": "Aarav Chouhan",
+              "course": "MA201"
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS065",
+              "name": "Harsh Dubey",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS073",
+              "name": "Rohan Soni",
+              "course": "MA201"
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS068",
+              "name": "Harsh Mishra",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS077",
+              "name": "Neha Verma",
+              "course": "MA201"
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS072",
+              "name": "Neha Sharma",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS080",
+              "name": "Karan Patel",
+              "course": "MA201"
+            },
+            {
+              "row": 6,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS084",
+              "name": "Diya Agrawal",
+              "course": "MA201"
+            },
+            {
+              "row": 6,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS075",
+              "name": "Pooja Gupta",
+              "course": "CS201"
+            },
+            {
+              "row": 6,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS085",
+              "name": "Isha Gupta",
+              "course": "MA201"
+            },
+            {
+              "row": 6,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS078",
+              "name": "Kabir Chouhan",
+              "course": "CS201"
+            },
+            {
+              "row": 6,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS088",
+              "name": "Rahul Agrawal",
+              "course": "MA201"
+            },
+            {
+              "row": 6,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS083",
+              "name": "Nikhil Jain",
+              "course": "CS201"
+            },
+            {
+              "row": 6,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS090",
+              "name": "Neha Dubey",
+              "course": "CS201"
+            }
+          ]
+        },
+        {
+          "room_id": "LH1",
+          "name": "Lecture Hall 1",
+          "rows": 5,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 34,
+          "students": 34,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS006",
+              "name": "Vivaan Yadav",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS002",
+              "name": "Isha Agrawal",
+              "course": "MA201"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS012",
+              "name": "Vivaan Dubey",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS007",
+              "name": "Rohan Sharma",
+              "course": "MA201"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS015",
+              "name": "Yash Tiwari",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS014",
+              "name": "Rahul Agrawal",
+              "course": "MA201"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS018",
+              "name": "Vivaan Gupta",
+              "course": "CS201"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS025",
+              "name": "Harsh Patel",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS029",
+              "name": "Arjun Yadav",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS022",
+              "name": "Riya Verma",
+              "course": "CS201"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS039",
+              "name": "Kabir Rathore",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS027",
+              "name": "Sneha Agrawal",
+              "course": "CS201"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS045",
+              "name": "Siddharth Tiwari",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS031",
+              "name": "Sneha Sharma",
+              "course": "CS201"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS047",
+              "name": "Priya Jain",
+              "course": "MA201"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS033",
+              "name": "Neha Agrawal",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS036",
+              "name": "Meera Tiwari",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS055",
+              "name": "Nikhil Mishra",
+              "course": "MA201"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS060",
+              "name": "Neha Rathore",
+              "course": "MA201"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS041",
+              "name": "Aditya Tiwari",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS051",
+              "name": "Vivaan Agrawal",
+              "course": "CS201"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS064",
+              "name": "Yash Tiwari",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS067",
+              "name": "Nikhil Jain",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS056",
+              "name": "Tanvi Chouhan",
+              "course": "CS201"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS070",
+              "name": "Diya Patel",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS059",
+              "name": "Aditya Joshi",
+              "course": "CS201"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS079",
+              "name": "Isha Yadav",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS071",
+              "name": "Tanvi Verma",
+              "course": "CS201"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS081",
+              "name": "Kavya Dubey",
+              "course": "MA201"
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS074",
+              "name": "Siddharth Patel",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS082",
+              "name": "Riya Joshi",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS086",
+              "name": "Ishaan Verma",
+              "course": "MA201"
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS087",
+              "name": "Kabir Patel",
+              "course": "CS201"
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS089",
+              "name": "Rahul Sharma",
+              "course": "MA201"
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "slot": "Afternoon 02:00",
+      "courses": [
+        "CS204",
+        "MA202"
+      ],
+      "ok": true,
+      "error": null,
+      "warnings": [],
+      "student_count": 80,
+      "rooms": [
+        {
+          "room_id": "R101",
+          "name": "Room 101",
+          "rows": 6,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 39,
+          "students": 35,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS002",
+              "name": "Isha Agrawal",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS001",
+              "name": "Ananya Patel",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS007",
+              "name": "Rohan Sharma",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS008",
+              "name": "Aditya Jain",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS013",
+              "name": "Sneha Verma",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS010",
+              "name": "Rahul Verma",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS015",
+              "name": "Yash Tiwari",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS026",
+              "name": "Arjun Tiwari",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS027",
+              "name": "Sneha Agrawal",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS017",
+              "name": "Sneha Jain",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS035",
+              "name": "Shreya Mishra",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS022",
+              "name": "Riya Verma",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS042",
+              "name": "Siddharth Yadav",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS030",
+              "name": "Nikhil Verma",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS044",
+              "name": "Pooja Chouhan",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS034",
+              "name": "Riya Jain",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS037",
+              "name": "Meera Mishra",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS047",
+              "name": "Priya Jain",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS046",
+              "name": "Aditya Verma",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS058",
+              "name": "Meera Verma",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS050",
+              "name": "Neha Jain",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS065",
+              "name": "Harsh Dubey",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS053",
+              "name": "Riya Tiwari",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS071",
+              "name": "Tanvi Verma",
+              "course": "MA202"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS079",
+              "name": "Isha Yadav",
+              "course": "MA202"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS055",
+              "name": "Nikhil Mishra",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS083",
+              "name": "Nikhil Jain",
+              "course": "MA202"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS061",
+              "name": "Harsh Verma",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS086",
+              "name": "Ishaan Verma",
+              "course": "MA202"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS067",
+              "name": "Nikhil Jain",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS069",
+              "name": "Aarav Chouhan",
+              "course": "CS204"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS075",
+              "name": "Pooja Gupta",
+              "course": "CS204"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS077",
+              "name": "Neha Verma",
+              "course": "CS204"
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS082",
+              "name": "Riya Joshi",
+              "course": "CS204"
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS088",
+              "name": "Rahul Agrawal",
+              "course": "CS204"
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            }
+          ]
+        },
+        {
+          "room_id": "LH1",
+          "name": "Lecture Hall 1",
+          "rows": 5,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 30,
+          "students": 25,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS003",
+              "name": "Vivaan Verma",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS009",
+              "name": "Kavya Verma",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS011",
+              "name": "Riya Jain",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS020",
+              "name": "Ishaan Joshi",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS014",
+              "name": "Rahul Agrawal",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS028",
+              "name": "Rohan Mishra",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS018",
+              "name": "Vivaan Gupta",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS040",
+              "name": "Shreya Gupta",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS043",
+              "name": "Neha Mishra",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS025",
+              "name": "Harsh Patel",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS051",
+              "name": "Vivaan Agrawal",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS036",
+              "name": "Meera Tiwari",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS064",
+              "name": "Yash Tiwari",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS038",
+              "name": "Siddharth Gupta",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS072",
+              "name": "Neha Sharma",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS048",
+              "name": "Kabir Soni",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS054",
+              "name": "Ananya Mishra",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS080",
+              "name": "Karan Patel",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS085",
+              "name": "Isha Gupta",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS057",
+              "name": "Sneha Soni",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS068",
+              "name": "Harsh Mishra",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS074",
+              "name": "Siddharth Patel",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS076",
+              "name": "Isha Jain",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS084",
+              "name": "Diya Agrawal",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS089",
+              "name": "Rahul Sharma",
+              "course": "CS204"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": true
+            }
+          ]
+        },
+        {
+          "room_id": "R102",
+          "name": "Room 102",
+          "rows": 5,
+          "cols": 6,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 22,
+          "students": 20,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": true
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS005",
+              "name": "Diya Tiwari",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS006",
+              "name": "Vivaan Yadav",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS012",
+              "name": "Vivaan Dubey",
+              "course": "CS204"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS019",
+              "name": "Vivaan Yadav",
+              "course": "MA202"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS016",
+              "name": "Vivaan Tiwari",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS023",
+              "name": "Sneha Joshi",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS033",
+              "name": "Neha Agrawal",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS031",
+              "name": "Sneha Sharma",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS041",
+              "name": "Aditya Tiwari",
+              "course": "MA202"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS039",
+              "name": "Kabir Rathore",
+              "course": "CS204"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS045",
+              "name": "Siddharth Tiwari",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS060",
+              "name": "Neha Rathore",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS052",
+              "name": "Aditya Soni",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS070",
+              "name": "Diya Patel",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS056",
+              "name": "Tanvi Chouhan",
+              "course": "CS204"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS081",
+              "name": "Kavya Dubey",
+              "course": "MA202"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS066",
+              "name": "Meera Joshi",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS073",
+              "name": "Rohan Soni",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS078",
+              "name": "Kabir Chouhan",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS087",
+              "name": "Kabir Patel",
+              "course": "CS204"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "slot": "Morning 10:00",
+      "courses": [
+        "CS203",
+        "HS201"
+      ],
+      "ok": true,
+      "error": null,
+      "warnings": [],
+      "student_count": 82,
+      "rooms": [
+        {
+          "room_id": "R101",
+          "name": "Room 101",
+          "rows": 6,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 36,
+          "students": 36,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS005",
+              "name": "Diya Tiwari",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS001",
+              "name": "Ananya Patel",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS012",
+              "name": "Vivaan Dubey",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS004",
+              "name": "Riya Verma",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS019",
+              "name": "Vivaan Yadav",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS008",
+              "name": "Aditya Jain",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS023",
+              "name": "Sneha Joshi",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS013",
+              "name": "Sneha Verma",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS018",
+              "name": "Vivaan Gupta",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS025",
+              "name": "Harsh Patel",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS028",
+              "name": "Rohan Mishra",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS031",
+              "name": "Sneha Sharma",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS030",
+              "name": "Nikhil Verma",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS036",
+              "name": "Meera Tiwari",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS040",
+              "name": "Shreya Gupta",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS038",
+              "name": "Siddharth Gupta",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS044",
+              "name": "Pooja Chouhan",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS049",
+              "name": "Ananya Patel",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS048",
+              "name": "Kabir Soni",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS055",
+              "name": "Nikhil Mishra",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS051",
+              "name": "Vivaan Agrawal",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS059",
+              "name": "Aditya Joshi",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS053",
+              "name": "Riya Tiwari",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS062",
+              "name": "Vivaan Rathore",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS065",
+              "name": "Harsh Dubey",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS061",
+              "name": "Harsh Verma",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS071",
+              "name": "Tanvi Verma",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS068",
+              "name": "Harsh Mishra",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS075",
+              "name": "Pooja Gupta",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS072",
+              "name": "Neha Sharma",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS083",
+              "name": "Nikhil Jain",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS076",
+              "name": "Isha Jain",
+              "course": "CS203"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS081",
+              "name": "Kavya Dubey",
+              "course": "CS203"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS087",
+              "name": "Kabir Patel",
+              "course": "HS201"
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS085",
+              "name": "Isha Gupta",
+              "course": "CS203"
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS090",
+              "name": "Neha Dubey",
+              "course": "HS201"
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            }
+          ]
+        },
+        {
+          "room_id": "LH1",
+          "name": "Lecture Hall 1",
+          "rows": 5,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 26,
+          "students": 25,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS009",
+              "name": "Kavya Verma",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS002",
+              "name": "Isha Agrawal",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS014",
+              "name": "Rahul Agrawal",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS007",
+              "name": "Rohan Sharma",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS021",
+              "name": "Kavya Patel",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS015",
+              "name": "Yash Tiwari",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS027",
+              "name": "Sneha Agrawal",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS022",
+              "name": "Riya Verma",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS035",
+              "name": "Shreya Mishra",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS034",
+              "name": "Riya Jain",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS041",
+              "name": "Aditya Tiwari",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS042",
+              "name": "Siddharth Yadav",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS054",
+              "name": "Ananya Mishra",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS045",
+              "name": "Siddharth Tiwari",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS060",
+              "name": "Neha Rathore",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS050",
+              "name": "Neha Jain",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS058",
+              "name": "Meera Verma",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS064",
+              "name": "Yash Tiwari",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS073",
+              "name": "Rohan Soni",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS067",
+              "name": "Nikhil Jain",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS074",
+              "name": "Siddharth Patel",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS079",
+              "name": "Isha Yadav",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS086",
+              "name": "Ishaan Verma",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS078",
+              "name": "Kabir Chouhan",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS084",
+              "name": "Diya Agrawal",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": true
+            }
+          ]
+        },
+        {
+          "room_id": "R102",
+          "name": "Room 102",
+          "rows": 5,
+          "cols": 6,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 21,
+          "students": 21,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": true
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS010",
+              "name": "Rahul Verma",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS003",
+              "name": "Vivaan Verma",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS016",
+              "name": "Vivaan Tiwari",
+              "course": "CS203"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS011",
+              "name": "Riya Jain",
+              "course": "HS201"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS024",
+              "name": "Riya Dubey",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS032",
+              "name": "Tanvi Gupta",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS020",
+              "name": "Ishaan Joshi",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS037",
+              "name": "Meera Mishra",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS039",
+              "name": "Kabir Rathore",
+              "course": "HS201"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS047",
+              "name": "Priya Jain",
+              "course": "CS203"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS043",
+              "name": "Neha Mishra",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS056",
+              "name": "Tanvi Chouhan",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS052",
+              "name": "Aditya Soni",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS063",
+              "name": "Nikhil Joshi",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS066",
+              "name": "Meera Joshi",
+              "course": "CS203"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS070",
+              "name": "Diya Patel",
+              "course": "HS201"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS069",
+              "name": "Aarav Chouhan",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS077",
+              "name": "Neha Verma",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS080",
+              "name": "Karan Patel",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS088",
+              "name": "Rahul Agrawal",
+              "course": "CS203"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS089",
+              "name": "Rahul Sharma",
+              "course": "HS201"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "slot": "Afternoon 02:00",
+      "courses": [
+        "CS206",
+        "HS202"
+      ],
+      "ok": true,
+      "error": null,
+      "warnings": [],
+      "student_count": 81,
+      "rooms": [
+        {
+          "room_id": "R101",
+          "name": "Room 101",
+          "rows": 6,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 37,
+          "students": 35,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS003",
+              "name": "Vivaan Verma",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS002",
+              "name": "Isha Agrawal",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS014",
+              "name": "Rahul Agrawal",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS005",
+              "name": "Diya Tiwari",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS017",
+              "name": "Sneha Jain",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS007",
+              "name": "Rohan Sharma",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS019",
+              "name": "Vivaan Yadav",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS009",
+              "name": "Kavya Verma",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS020",
+              "name": "Ishaan Joshi",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS031",
+              "name": "Sneha Sharma",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS021",
+              "name": "Kavya Patel",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS037",
+              "name": "Meera Mishra",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS025",
+              "name": "Harsh Patel",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS042",
+              "name": "Siddharth Yadav",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS030",
+              "name": "Nikhil Verma",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS045",
+              "name": "Siddharth Tiwari",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS047",
+              "name": "Priya Jain",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS033",
+              "name": "Neha Agrawal",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS050",
+              "name": "Neha Jain",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS035",
+              "name": "Shreya Mishra",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS052",
+              "name": "Aditya Soni",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS055",
+              "name": "Nikhil Mishra",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS058",
+              "name": "Meera Verma",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS068",
+              "name": "Harsh Mishra",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS074",
+              "name": "Siddharth Patel",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS060",
+              "name": "Neha Rathore",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS076",
+              "name": "Isha Jain",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS066",
+              "name": "Meera Joshi",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS082",
+              "name": "Riya Joshi",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS070",
+              "name": "Diya Patel",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS086",
+              "name": "Ishaan Verma",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS073",
+              "name": "Rohan Soni",
+              "course": "HS202"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS081",
+              "name": "Kavya Dubey",
+              "course": "HS202"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS084",
+              "name": "Diya Agrawal",
+              "course": "HS202"
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS088",
+              "name": "Rahul Agrawal",
+              "course": "HS202"
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            }
+          ]
+        },
+        {
+          "room_id": "LH1",
+          "name": "Lecture Hall 1",
+          "rows": 5,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 28,
+          "students": 25,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS011",
+              "name": "Riya Jain",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS004",
+              "name": "Riya Verma",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS015",
+              "name": "Yash Tiwari",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS008",
+              "name": "Aditya Jain",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS018",
+              "name": "Vivaan Gupta",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS012",
+              "name": "Vivaan Dubey",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS036",
+              "name": "Meera Tiwari",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS022",
+              "name": "Riya Verma",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS027",
+              "name": "Sneha Agrawal",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS041",
+              "name": "Aditya Tiwari",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS032",
+              "name": "Tanvi Gupta",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS046",
+              "name": "Aditya Verma",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS054",
+              "name": "Ananya Mishra",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS048",
+              "name": "Kabir Soni",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS065",
+              "name": "Harsh Dubey",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS051",
+              "name": "Vivaan Agrawal",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS059",
+              "name": "Aditya Joshi",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS075",
+              "name": "Pooja Gupta",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS077",
+              "name": "Neha Verma",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS064",
+              "name": "Yash Tiwari",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS071",
+              "name": "Tanvi Verma",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS085",
+              "name": "Isha Gupta",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS080",
+              "name": "Karan Patel",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS083",
+              "name": "Nikhil Jain",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS090",
+              "name": "Neha Dubey",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": true
+            }
+          ]
+        },
+        {
+          "room_id": "R102",
+          "name": "Room 102",
+          "rows": 5,
+          "cols": 6,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 24,
+          "students": 21,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": true
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS013",
+              "name": "Sneha Verma",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS001",
+              "name": "Ananya Patel",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS016",
+              "name": "Vivaan Tiwari",
+              "course": "HS202"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS006",
+              "name": "Vivaan Yadav",
+              "course": "CS206"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS029",
+              "name": "Arjun Yadav",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS010",
+              "name": "Rahul Verma",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS039",
+              "name": "Kabir Rathore",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS024",
+              "name": "Riya Dubey",
+              "course": "CS206"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS044",
+              "name": "Pooja Chouhan",
+              "course": "HS202"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS028",
+              "name": "Rohan Mishra",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS049",
+              "name": "Ananya Patel",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS034",
+              "name": "Riya Jain",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS057",
+              "name": "Sneha Soni",
+              "course": "HS202"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS062",
+              "name": "Vivaan Rathore",
+              "course": "CS206"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS061",
+              "name": "Harsh Verma",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS069",
+              "name": "Aarav Chouhan",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS067",
+              "name": "Nikhil Jain",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS079",
+              "name": "Isha Yadav",
+              "course": "CS206"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS078",
+              "name": "Kabir Chouhan",
+              "course": "HS202"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS089",
+              "name": "Rahul Sharma",
+              "course": "CS206"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS087",
+              "name": "Kabir Patel",
+              "course": "HS202"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-12-05",
+      "slot": "Morning 10:00",
+      "courses": [
+        "CS205",
+        "EC202"
+      ],
+      "ok": true,
+      "error": null,
+      "warnings": [],
+      "student_count": 71,
+      "rooms": [
+        {
+          "room_id": "R101",
+          "name": "Room 101",
+          "rows": 6,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 44,
+          "students": 41,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS006",
+              "name": "Vivaan Yadav",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS003",
+              "name": "Vivaan Verma",
+              "course": "EC202"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS012",
+              "name": "Vivaan Dubey",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS007",
+              "name": "Rohan Sharma",
+              "course": "EC202"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS015",
+              "name": "Yash Tiwari",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS010",
+              "name": "Rahul Verma",
+              "course": "EC202"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS019",
+              "name": "Vivaan Yadav",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS016",
+              "name": "Vivaan Tiwari",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS021",
+              "name": "Kavya Patel",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS022",
+              "name": "Riya Verma",
+              "course": "CS205"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS026",
+              "name": "Arjun Tiwari",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS030",
+              "name": "Nikhil Verma",
+              "course": "CS205"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS028",
+              "name": "Rohan Mishra",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS033",
+              "name": "Neha Agrawal",
+              "course": "CS205"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS034",
+              "name": "Riya Jain",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS036",
+              "name": "Meera Tiwari",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS042",
+              "name": "Siddharth Yadav",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS038",
+              "name": "Siddharth Gupta",
+              "course": "EC202"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS045",
+              "name": "Siddharth Tiwari",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS039",
+              "name": "Kabir Rathore",
+              "course": "EC202"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS047",
+              "name": "Priya Jain",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS054",
+              "name": "Ananya Mishra",
+              "course": "EC202"
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS049",
+              "name": "Ananya Patel",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS060",
+              "name": "Neha Rathore",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS068",
+              "name": "Harsh Mishra",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS053",
+              "name": "Riya Tiwari",
+              "course": "CS205"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS072",
+              "name": "Neha Sharma",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS056",
+              "name": "Tanvi Chouhan",
+              "course": "CS205"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS074",
+              "name": "Siddharth Patel",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS057",
+              "name": "Sneha Soni",
+              "course": "CS205"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS078",
+              "name": "Kabir Chouhan",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS062",
+              "name": "Vivaan Rathore",
+              "course": "CS205"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS064",
+              "name": "Yash Tiwari",
+              "course": "CS205"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS079",
+              "name": "Isha Yadav",
+              "course": "EC202"
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS066",
+              "name": "Meera Joshi",
+              "course": "CS205"
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS084",
+              "name": "Diya Agrawal",
+              "course": "EC202"
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS067",
+              "name": "Nikhil Jain",
+              "course": "CS205"
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS088",
+              "name": "Rahul Agrawal",
+              "course": "EC202"
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS071",
+              "name": "Tanvi Verma",
+              "course": "CS205"
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 1,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS080",
+              "name": "Karan Patel",
+              "course": "CS205"
+            },
+            {
+              "row": 6,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS081",
+              "name": "Kavya Dubey",
+              "course": "CS205"
+            },
+            {
+              "row": 6,
+              "col": 5,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 6,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 6,
+              "col": 8,
+              "blocked": false,
+              "empty": true
+            }
+          ]
+        },
+        {
+          "room_id": "LH1",
+          "name": "Lecture Hall 1",
+          "rows": 5,
+          "cols": 8,
+          "provisional": false,
+          "strategy": "greedy",
+          "search_nodes": 31,
+          "students": 30,
+          "seats": [
+            {
+              "row": 1,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS009",
+              "name": "Kavya Verma",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS004",
+              "name": "Riya Verma",
+              "course": "EC202"
+            },
+            {
+              "row": 1,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS014",
+              "name": "Rahul Agrawal",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS011",
+              "name": "Riya Jain",
+              "course": "EC202"
+            },
+            {
+              "row": 1,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS017",
+              "name": "Sneha Jain",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS020",
+              "name": "Ishaan Joshi",
+              "course": "EC202"
+            },
+            {
+              "row": 1,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS029",
+              "name": "Arjun Yadav",
+              "course": "CS205"
+            },
+            {
+              "row": 1,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS023",
+              "name": "Sneha Joshi",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS031",
+              "name": "Sneha Sharma",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS032",
+              "name": "Tanvi Gupta",
+              "course": "CS205"
+            },
+            {
+              "row": 2,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS035",
+              "name": "Shreya Mishra",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS040",
+              "name": "Shreya Gupta",
+              "course": "CS205"
+            },
+            {
+              "row": 2,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS048",
+              "name": "Kabir Soni",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS044",
+              "name": "Pooja Chouhan",
+              "course": "CS205"
+            },
+            {
+              "row": 2,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS058",
+              "name": "Meera Verma",
+              "course": "EC202"
+            },
+            {
+              "row": 2,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS046",
+              "name": "Aditya Verma",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS052",
+              "name": "Aditya Soni",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS061",
+              "name": "Harsh Verma",
+              "course": "EC202"
+            },
+            {
+              "row": 3,
+              "col": 3,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS073",
+              "name": "Rohan Soni",
+              "course": "EC202"
+            },
+            {
+              "row": 3,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS055",
+              "name": "Nikhil Mishra",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 3,
+              "col": 7,
+              "blocked": false,
+              "roll_no": "24CS059",
+              "name": "Aditya Joshi",
+              "course": "CS205"
+            },
+            {
+              "row": 3,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS075",
+              "name": "Pooja Gupta",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS082",
+              "name": "Riya Joshi",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 2,
+              "blocked": false,
+              "roll_no": "24CS063",
+              "name": "Nikhil Joshi",
+              "course": "CS205"
+            },
+            {
+              "row": 4,
+              "col": 3,
+              "blocked": false,
+              "roll_no": "24CS087",
+              "name": "Kabir Patel",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 4,
+              "blocked": false,
+              "roll_no": "24CS065",
+              "name": "Harsh Dubey",
+              "course": "CS205"
+            },
+            {
+              "row": 4,
+              "col": 5,
+              "blocked": false,
+              "roll_no": "24CS090",
+              "name": "Neha Dubey",
+              "course": "EC202"
+            },
+            {
+              "row": 4,
+              "col": 6,
+              "blocked": false,
+              "roll_no": "24CS070",
+              "name": "Diya Patel",
+              "course": "CS205"
+            },
+            {
+              "row": 4,
+              "col": 7,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 4,
+              "col": 8,
+              "blocked": false,
+              "roll_no": "24CS077",
+              "name": "Neha Verma",
+              "course": "CS205"
+            },
+            {
+              "row": 5,
+              "col": 1,
+              "blocked": false,
+              "roll_no": "24CS086",
+              "name": "Ishaan Verma",
+              "course": "CS205"
+            },
+            {
+              "row": 5,
+              "col": 2,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 3,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 4,
+              "blocked": false,
+              "empty": true
+            },
+            {
+              "row": 5,
+              "col": 5,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 6,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 7,
+              "blocked": true
+            },
+            {
+              "row": 5,
+              "col": 8,
+              "blocked": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "course_names": {
+    "MA201": "Discrete Mathematics",
+    "CS202": "Computer Architecture",
+    "HS201": "Economics",
+    "MA202": "Probability",
+    "CS206": "Database Systems",
+    "EC201": "Digital Logic",
+    "CS204": "Design and Analysis of Algorithms",
+    "CS201": "Data Structures",
+    "EC202": "Signals and Systems",
+    "HS202": "Communication Skills",
+    "CS203": "Object Oriented Programming",
+    "CS205": "Operating Systems"
+  },
+  "data_warnings": []
+}

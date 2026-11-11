@@ -1,0 +1,476 @@
+Roll No,Student Name,Course Code,Course Name
+24CS001,Ananya Patel,MA201,Discrete Mathematics
+24CS001,Ananya Patel,CS202,Computer Architecture
+24CS001,Ananya Patel,HS201,Economics
+24CS001,Ananya Patel,MA202,Probability
+24CS001,Ananya Patel,CS206,Database Systems
+24CS002,Isha Agrawal,MA201,Discrete Mathematics
+24CS002,Isha Agrawal,EC201,Digital Logic
+24CS002,Isha Agrawal,HS201,Economics
+24CS002,Isha Agrawal,CS204,Design and Analysis of Algorithms
+24CS002,Isha Agrawal,CS206,Database Systems
+24CS003,Vivaan Verma,CS201,Data Structures
+24CS003,Vivaan Verma,CS202,Computer Architecture
+24CS003,Vivaan Verma,HS201,Economics
+24CS003,Vivaan Verma,CS204,Design and Analysis of Algorithms
+24CS003,Vivaan Verma,EC202,Signals and Systems
+24CS003,Vivaan Verma,HS202,Communication Skills
+24CS004,Riya Verma,EC201,Digital Logic
+24CS004,Riya Verma,HS201,Economics
+24CS004,Riya Verma,EC202,Signals and Systems
+24CS004,Riya Verma,CS206,Database Systems
+24CS005,Diya Tiwari,MA201,Discrete Mathematics
+24CS005,Diya Tiwari,EC201,Digital Logic
+24CS005,Diya Tiwari,CS203,Object Oriented Programming
+24CS005,Diya Tiwari,CS204,Design and Analysis of Algorithms
+24CS005,Diya Tiwari,CS206,Database Systems
+24CS006,Vivaan Yadav,CS201,Data Structures
+24CS006,Vivaan Yadav,EC201,Digital Logic
+24CS006,Vivaan Yadav,MA202,Probability
+24CS006,Vivaan Yadav,CS205,Operating Systems
+24CS006,Vivaan Yadav,CS206,Database Systems
+24CS007,Rohan Sharma,MA201,Discrete Mathematics
+24CS007,Rohan Sharma,CS202,Computer Architecture
+24CS007,Rohan Sharma,HS201,Economics
+24CS007,Rohan Sharma,CS204,Design and Analysis of Algorithms
+24CS007,Rohan Sharma,EC202,Signals and Systems
+24CS007,Rohan Sharma,CS206,Database Systems
+24CS008,Aditya Jain,EC201,Digital Logic
+24CS008,Aditya Jain,HS201,Economics
+24CS008,Aditya Jain,MA202,Probability
+24CS008,Aditya Jain,CS206,Database Systems
+24CS009,Kavya Verma,MA201,Discrete Mathematics
+24CS009,Kavya Verma,CS202,Computer Architecture
+24CS009,Kavya Verma,CS203,Object Oriented Programming
+24CS009,Kavya Verma,MA202,Probability
+24CS009,Kavya Verma,CS205,Operating Systems
+24CS009,Kavya Verma,CS206,Database Systems
+24CS010,Rahul Verma,CS202,Computer Architecture
+24CS010,Rahul Verma,CS203,Object Oriented Programming
+24CS010,Rahul Verma,MA202,Probability
+24CS010,Rahul Verma,EC202,Signals and Systems
+24CS010,Rahul Verma,CS206,Database Systems
+24CS011,Riya Jain,CS201,Data Structures
+24CS011,Riya Jain,HS201,Economics
+24CS011,Riya Jain,CS204,Design and Analysis of Algorithms
+24CS011,Riya Jain,EC202,Signals and Systems
+24CS011,Riya Jain,HS202,Communication Skills
+24CS012,Vivaan Dubey,CS201,Data Structures
+24CS012,Vivaan Dubey,CS202,Computer Architecture
+24CS012,Vivaan Dubey,CS203,Object Oriented Programming
+24CS012,Vivaan Dubey,CS204,Design and Analysis of Algorithms
+24CS012,Vivaan Dubey,CS205,Operating Systems
+24CS012,Vivaan Dubey,CS206,Database Systems
+24CS013,Sneha Verma,CS201,Data Structures
+24CS013,Sneha Verma,EC201,Digital Logic
+24CS013,Sneha Verma,HS201,Economics
+24CS013,Sneha Verma,CS204,Design and Analysis of Algorithms
+24CS013,Sneha Verma,HS202,Communication Skills
+24CS014,Rahul Agrawal,MA201,Discrete Mathematics
+24CS014,Rahul Agrawal,CS202,Computer Architecture
+24CS014,Rahul Agrawal,CS203,Object Oriented Programming
+24CS014,Rahul Agrawal,CS204,Design and Analysis of Algorithms
+24CS014,Rahul Agrawal,CS205,Operating Systems
+24CS014,Rahul Agrawal,HS202,Communication Skills
+24CS015,Yash Tiwari,CS201,Data Structures
+24CS015,Yash Tiwari,EC201,Digital Logic
+24CS015,Yash Tiwari,HS201,Economics
+24CS015,Yash Tiwari,CS204,Design and Analysis of Algorithms
+24CS015,Yash Tiwari,CS205,Operating Systems
+24CS015,Yash Tiwari,HS202,Communication Skills
+24CS016,Vivaan Tiwari,CS201,Data Structures
+24CS016,Vivaan Tiwari,CS202,Computer Architecture
+24CS016,Vivaan Tiwari,CS203,Object Oriented Programming
+24CS016,Vivaan Tiwari,CS204,Design and Analysis of Algorithms
+24CS016,Vivaan Tiwari,EC202,Signals and Systems
+24CS016,Vivaan Tiwari,HS202,Communication Skills
+24CS017,Sneha Jain,CS201,Data Structures
+24CS017,Sneha Jain,EC201,Digital Logic
+24CS017,Sneha Jain,CS204,Design and Analysis of Algorithms
+24CS017,Sneha Jain,CS205,Operating Systems
+24CS017,Sneha Jain,HS202,Communication Skills
+24CS018,Vivaan Gupta,CS201,Data Structures
+24CS018,Vivaan Gupta,EC201,Digital Logic
+24CS018,Vivaan Gupta,HS201,Economics
+24CS018,Vivaan Gupta,CS204,Design and Analysis of Algorithms
+24CS018,Vivaan Gupta,HS202,Communication Skills
+24CS019,Vivaan Yadav,CS201,Data Structures
+24CS019,Vivaan Yadav,CS203,Object Oriented Programming
+24CS019,Vivaan Yadav,MA202,Probability
+24CS019,Vivaan Yadav,CS205,Operating Systems
+24CS019,Vivaan Yadav,HS202,Communication Skills
+24CS020,Ishaan Joshi,EC201,Digital Logic
+24CS020,Ishaan Joshi,HS201,Economics
+24CS020,Ishaan Joshi,MA202,Probability
+24CS020,Ishaan Joshi,EC202,Signals and Systems
+24CS020,Ishaan Joshi,CS206,Database Systems
+24CS021,Kavya Patel,MA201,Discrete Mathematics
+24CS021,Kavya Patel,CS202,Computer Architecture
+24CS021,Kavya Patel,CS203,Object Oriented Programming
+24CS021,Kavya Patel,EC202,Signals and Systems
+24CS021,Kavya Patel,CS206,Database Systems
+24CS022,Riya Verma,CS201,Data Structures
+24CS022,Riya Verma,EC201,Digital Logic
+24CS022,Riya Verma,HS201,Economics
+24CS022,Riya Verma,CS204,Design and Analysis of Algorithms
+24CS022,Riya Verma,CS205,Operating Systems
+24CS022,Riya Verma,CS206,Database Systems
+24CS023,Sneha Joshi,CS201,Data Structures
+24CS023,Sneha Joshi,EC201,Digital Logic
+24CS023,Sneha Joshi,CS203,Object Oriented Programming
+24CS023,Sneha Joshi,CS204,Design and Analysis of Algorithms
+24CS023,Sneha Joshi,EC202,Signals and Systems
+24CS024,Riya Dubey,MA201,Discrete Mathematics
+24CS024,Riya Dubey,CS202,Computer Architecture
+24CS024,Riya Dubey,CS203,Object Oriented Programming
+24CS024,Riya Dubey,CS206,Database Systems
+24CS025,Harsh Patel,MA201,Discrete Mathematics
+24CS025,Harsh Patel,CS202,Computer Architecture
+24CS025,Harsh Patel,CS203,Object Oriented Programming
+24CS025,Harsh Patel,CS204,Design and Analysis of Algorithms
+24CS025,Harsh Patel,CS206,Database Systems
+24CS026,Arjun Tiwari,CS201,Data Structures
+24CS026,Arjun Tiwari,CS202,Computer Architecture
+24CS026,Arjun Tiwari,MA202,Probability
+24CS026,Arjun Tiwari,EC202,Signals and Systems
+24CS027,Sneha Agrawal,CS201,Data Structures
+24CS027,Sneha Agrawal,CS203,Object Oriented Programming
+24CS027,Sneha Agrawal,MA202,Probability
+24CS027,Sneha Agrawal,CS206,Database Systems
+24CS028,Rohan Mishra,MA201,Discrete Mathematics
+24CS028,Rohan Mishra,CS202,Computer Architecture
+24CS028,Rohan Mishra,HS201,Economics
+24CS028,Rohan Mishra,MA202,Probability
+24CS028,Rohan Mishra,EC202,Signals and Systems
+24CS028,Rohan Mishra,CS206,Database Systems
+24CS029,Arjun Yadav,MA201,Discrete Mathematics
+24CS029,Arjun Yadav,EC201,Digital Logic
+24CS029,Arjun Yadav,CS205,Operating Systems
+24CS029,Arjun Yadav,HS202,Communication Skills
+24CS030,Nikhil Verma,CS201,Data Structures
+24CS030,Nikhil Verma,EC201,Digital Logic
+24CS030,Nikhil Verma,HS201,Economics
+24CS030,Nikhil Verma,CS204,Design and Analysis of Algorithms
+24CS030,Nikhil Verma,CS205,Operating Systems
+24CS030,Nikhil Verma,CS206,Database Systems
+24CS031,Sneha Sharma,CS201,Data Structures
+24CS031,Sneha Sharma,EC201,Digital Logic
+24CS031,Sneha Sharma,CS203,Object Oriented Programming
+24CS031,Sneha Sharma,CS204,Design and Analysis of Algorithms
+24CS031,Sneha Sharma,EC202,Signals and Systems
+24CS031,Sneha Sharma,HS202,Communication Skills
+24CS032,Tanvi Gupta,CS201,Data Structures
+24CS032,Tanvi Gupta,EC201,Digital Logic
+24CS032,Tanvi Gupta,CS203,Object Oriented Programming
+24CS032,Tanvi Gupta,CS205,Operating Systems
+24CS032,Tanvi Gupta,CS206,Database Systems
+24CS033,Neha Agrawal,CS201,Data Structures
+24CS033,Neha Agrawal,EC201,Digital Logic
+24CS033,Neha Agrawal,MA202,Probability
+24CS033,Neha Agrawal,CS205,Operating Systems
+24CS033,Neha Agrawal,CS206,Database Systems
+24CS034,Riya Jain,CS201,Data Structures
+24CS034,Riya Jain,CS202,Computer Architecture
+24CS034,Riya Jain,CS203,Object Oriented Programming
+24CS034,Riya Jain,CS204,Design and Analysis of Algorithms
+24CS034,Riya Jain,EC202,Signals and Systems
+24CS034,Riya Jain,CS206,Database Systems
+24CS035,Shreya Mishra,CS201,Data Structures
+24CS035,Shreya Mishra,CS202,Computer Architecture
+24CS035,Shreya Mishra,HS201,Economics
+24CS035,Shreya Mishra,MA202,Probability
+24CS035,Shreya Mishra,EC202,Signals and Systems
+24CS035,Shreya Mishra,CS206,Database Systems
+24CS036,Meera Tiwari,CS201,Data Structures
+24CS036,Meera Tiwari,EC201,Digital Logic
+24CS036,Meera Tiwari,CS203,Object Oriented Programming
+24CS036,Meera Tiwari,CS204,Design and Analysis of Algorithms
+24CS036,Meera Tiwari,CS205,Operating Systems
+24CS036,Meera Tiwari,HS202,Communication Skills
+24CS037,Meera Mishra,MA201,Discrete Mathematics
+24CS037,Meera Mishra,EC201,Digital Logic
+24CS037,Meera Mishra,CS203,Object Oriented Programming
+24CS037,Meera Mishra,CS204,Design and Analysis of Algorithms
+24CS037,Meera Mishra,HS202,Communication Skills
+24CS038,Siddharth Gupta,MA201,Discrete Mathematics
+24CS038,Siddharth Gupta,CS203,Object Oriented Programming
+24CS038,Siddharth Gupta,CS204,Design and Analysis of Algorithms
+24CS038,Siddharth Gupta,EC202,Signals and Systems
+24CS039,Kabir Rathore,MA201,Discrete Mathematics
+24CS039,Kabir Rathore,EC201,Digital Logic
+24CS039,Kabir Rathore,HS201,Economics
+24CS039,Kabir Rathore,CS204,Design and Analysis of Algorithms
+24CS039,Kabir Rathore,EC202,Signals and Systems
+24CS039,Kabir Rathore,HS202,Communication Skills
+24CS040,Shreya Gupta,CS201,Data Structures
+24CS040,Shreya Gupta,EC201,Digital Logic
+24CS040,Shreya Gupta,HS201,Economics
+24CS040,Shreya Gupta,MA202,Probability
+24CS040,Shreya Gupta,CS205,Operating Systems
+24CS041,Aditya Tiwari,CS201,Data Structures
+24CS041,Aditya Tiwari,HS201,Economics
+24CS041,Aditya Tiwari,MA202,Probability
+24CS041,Aditya Tiwari,HS202,Communication Skills
+24CS042,Siddharth Yadav,CS202,Computer Architecture
+24CS042,Siddharth Yadav,CS203,Object Oriented Programming
+24CS042,Siddharth Yadav,MA202,Probability
+24CS042,Siddharth Yadav,CS205,Operating Systems
+24CS042,Siddharth Yadav,HS202,Communication Skills
+24CS043,Neha Mishra,MA201,Discrete Mathematics
+24CS043,Neha Mishra,EC201,Digital Logic
+24CS043,Neha Mishra,HS201,Economics
+24CS043,Neha Mishra,MA202,Probability
+24CS044,Pooja Chouhan,CS201,Data Structures
+24CS044,Pooja Chouhan,EC201,Digital Logic
+24CS044,Pooja Chouhan,CS203,Object Oriented Programming
+24CS044,Pooja Chouhan,MA202,Probability
+24CS044,Pooja Chouhan,CS205,Operating Systems
+24CS044,Pooja Chouhan,HS202,Communication Skills
+24CS045,Siddharth Tiwari,MA201,Discrete Mathematics
+24CS045,Siddharth Tiwari,EC201,Digital Logic
+24CS045,Siddharth Tiwari,CS203,Object Oriented Programming
+24CS045,Siddharth Tiwari,MA202,Probability
+24CS045,Siddharth Tiwari,CS205,Operating Systems
+24CS045,Siddharth Tiwari,HS202,Communication Skills
+24CS046,Aditya Verma,MA201,Discrete Mathematics
+24CS046,Aditya Verma,CS204,Design and Analysis of Algorithms
+24CS046,Aditya Verma,CS205,Operating Systems
+24CS046,Aditya Verma,HS202,Communication Skills
+24CS047,Priya Jain,MA201,Discrete Mathematics
+24CS047,Priya Jain,EC201,Digital Logic
+24CS047,Priya Jain,CS203,Object Oriented Programming
+24CS047,Priya Jain,MA202,Probability
+24CS047,Priya Jain,CS205,Operating Systems
+24CS047,Priya Jain,HS202,Communication Skills
+24CS048,Kabir Soni,MA201,Discrete Mathematics
+24CS048,Kabir Soni,EC201,Digital Logic
+24CS048,Kabir Soni,CS203,Object Oriented Programming
+24CS048,Kabir Soni,CS204,Design and Analysis of Algorithms
+24CS048,Kabir Soni,EC202,Signals and Systems
+24CS048,Kabir Soni,HS202,Communication Skills
+24CS049,Ananya Patel,CS201,Data Structures
+24CS049,Ananya Patel,EC201,Digital Logic
+24CS049,Ananya Patel,HS201,Economics
+24CS049,Ananya Patel,CS205,Operating Systems
+24CS049,Ananya Patel,HS202,Communication Skills
+24CS050,Neha Jain,CS202,Computer Architecture
+24CS050,Neha Jain,CS203,Object Oriented Programming
+24CS050,Neha Jain,CS204,Design and Analysis of Algorithms
+24CS050,Neha Jain,HS202,Communication Skills
+24CS051,Vivaan Agrawal,CS201,Data Structures
+24CS051,Vivaan Agrawal,CS202,Computer Architecture
+24CS051,Vivaan Agrawal,CS203,Object Oriented Programming
+24CS051,Vivaan Agrawal,MA202,Probability
+24CS051,Vivaan Agrawal,HS202,Communication Skills
+24CS052,Aditya Soni,CS201,Data Structures
+24CS052,Aditya Soni,EC201,Digital Logic
+24CS052,Aditya Soni,CS203,Object Oriented Programming
+24CS052,Aditya Soni,CS204,Design and Analysis of Algorithms
+24CS052,Aditya Soni,CS205,Operating Systems
+24CS052,Aditya Soni,HS202,Communication Skills
+24CS053,Riya Tiwari,EC201,Digital Logic
+24CS053,Riya Tiwari,CS203,Object Oriented Programming
+24CS053,Riya Tiwari,CS204,Design and Analysis of Algorithms
+24CS053,Riya Tiwari,CS205,Operating Systems
+24CS054,Ananya Mishra,MA201,Discrete Mathematics
+24CS054,Ananya Mishra,CS202,Computer Architecture
+24CS054,Ananya Mishra,HS201,Economics
+24CS054,Ananya Mishra,CS204,Design and Analysis of Algorithms
+24CS054,Ananya Mishra,EC202,Signals and Systems
+24CS054,Ananya Mishra,CS206,Database Systems
+24CS055,Nikhil Mishra,MA201,Discrete Mathematics
+24CS055,Nikhil Mishra,EC201,Digital Logic
+24CS055,Nikhil Mishra,HS201,Economics
+24CS055,Nikhil Mishra,CS204,Design and Analysis of Algorithms
+24CS055,Nikhil Mishra,CS205,Operating Systems
+24CS055,Nikhil Mishra,CS206,Database Systems
+24CS056,Tanvi Chouhan,CS201,Data Structures
+24CS056,Tanvi Chouhan,EC201,Digital Logic
+24CS056,Tanvi Chouhan,HS201,Economics
+24CS056,Tanvi Chouhan,CS204,Design and Analysis of Algorithms
+24CS056,Tanvi Chouhan,CS205,Operating Systems
+24CS057,Sneha Soni,MA201,Discrete Mathematics
+24CS057,Sneha Soni,CS202,Computer Architecture
+24CS057,Sneha Soni,CS204,Design and Analysis of Algorithms
+24CS057,Sneha Soni,CS205,Operating Systems
+24CS057,Sneha Soni,HS202,Communication Skills
+24CS058,Meera Verma,CS201,Data Structures
+24CS058,Meera Verma,CS203,Object Oriented Programming
+24CS058,Meera Verma,MA202,Probability
+24CS058,Meera Verma,EC202,Signals and Systems
+24CS058,Meera Verma,HS202,Communication Skills
+24CS059,Aditya Joshi,CS201,Data Structures
+24CS059,Aditya Joshi,EC201,Digital Logic
+24CS059,Aditya Joshi,HS201,Economics
+24CS059,Aditya Joshi,CS205,Operating Systems
+24CS059,Aditya Joshi,HS202,Communication Skills
+24CS060,Neha Rathore,MA201,Discrete Mathematics
+24CS060,Neha Rathore,EC201,Digital Logic
+24CS060,Neha Rathore,HS201,Economics
+24CS060,Neha Rathore,MA202,Probability
+24CS060,Neha Rathore,EC202,Signals and Systems
+24CS060,Neha Rathore,HS202,Communication Skills
+24CS061,Harsh Verma,MA201,Discrete Mathematics
+24CS061,Harsh Verma,CS202,Computer Architecture
+24CS061,Harsh Verma,CS203,Object Oriented Programming
+24CS061,Harsh Verma,CS204,Design and Analysis of Algorithms
+24CS061,Harsh Verma,EC202,Signals and Systems
+24CS061,Harsh Verma,HS202,Communication Skills
+24CS062,Vivaan Rathore,EC201,Digital Logic
+24CS062,Vivaan Rathore,HS201,Economics
+24CS062,Vivaan Rathore,CS205,Operating Systems
+24CS062,Vivaan Rathore,CS206,Database Systems
+24CS063,Nikhil Joshi,MA201,Discrete Mathematics
+24CS063,Nikhil Joshi,HS201,Economics
+24CS063,Nikhil Joshi,CS205,Operating Systems
+24CS064,Yash Tiwari,MA201,Discrete Mathematics
+24CS064,Yash Tiwari,CS202,Computer Architecture
+24CS064,Yash Tiwari,HS201,Economics
+24CS064,Yash Tiwari,MA202,Probability
+24CS064,Yash Tiwari,CS205,Operating Systems
+24CS064,Yash Tiwari,HS202,Communication Skills
+24CS065,Harsh Dubey,CS201,Data Structures
+24CS065,Harsh Dubey,CS202,Computer Architecture
+24CS065,Harsh Dubey,HS201,Economics
+24CS065,Harsh Dubey,MA202,Probability
+24CS065,Harsh Dubey,CS205,Operating Systems
+24CS065,Harsh Dubey,CS206,Database Systems
+24CS066,Meera Joshi,MA201,Discrete Mathematics
+24CS066,Meera Joshi,EC201,Digital Logic
+24CS066,Meera Joshi,CS203,Object Oriented Programming
+24CS066,Meera Joshi,CS204,Design and Analysis of Algorithms
+24CS066,Meera Joshi,CS205,Operating Systems
+24CS066,Meera Joshi,HS202,Communication Skills
+24CS067,Nikhil Jain,MA201,Discrete Mathematics
+24CS067,Nikhil Jain,EC201,Digital Logic
+24CS067,Nikhil Jain,CS203,Object Oriented Programming
+24CS067,Nikhil Jain,CS204,Design and Analysis of Algorithms
+24CS067,Nikhil Jain,CS205,Operating Systems
+24CS067,Nikhil Jain,HS202,Communication Skills
+24CS068,Harsh Mishra,CS201,Data Structures
+24CS068,Harsh Mishra,CS202,Computer Architecture
+24CS068,Harsh Mishra,CS203,Object Oriented Programming
+24CS068,Harsh Mishra,CS204,Design and Analysis of Algorithms
+24CS068,Harsh Mishra,EC202,Signals and Systems
+24CS068,Harsh Mishra,CS206,Database Systems
+24CS069,Aarav Chouhan,MA201,Discrete Mathematics
+24CS069,Aarav Chouhan,EC201,Digital Logic
+24CS069,Aarav Chouhan,CS203,Object Oriented Programming
+24CS069,Aarav Chouhan,CS204,Design and Analysis of Algorithms
+24CS069,Aarav Chouhan,CS206,Database Systems
+24CS070,Diya Patel,MA201,Discrete Mathematics
+24CS070,Diya Patel,CS202,Computer Architecture
+24CS070,Diya Patel,HS201,Economics
+24CS070,Diya Patel,MA202,Probability
+24CS070,Diya Patel,CS205,Operating Systems
+24CS070,Diya Patel,HS202,Communication Skills
+24CS071,Tanvi Verma,CS201,Data Structures
+24CS071,Tanvi Verma,EC201,Digital Logic
+24CS071,Tanvi Verma,HS201,Economics
+24CS071,Tanvi Verma,MA202,Probability
+24CS071,Tanvi Verma,CS205,Operating Systems
+24CS071,Tanvi Verma,HS202,Communication Skills
+24CS072,Neha Sharma,CS201,Data Structures
+24CS072,Neha Sharma,CS202,Computer Architecture
+24CS072,Neha Sharma,CS203,Object Oriented Programming
+24CS072,Neha Sharma,MA202,Probability
+24CS072,Neha Sharma,EC202,Signals and Systems
+24CS073,Rohan Soni,MA201,Discrete Mathematics
+24CS073,Rohan Soni,HS201,Economics
+24CS073,Rohan Soni,CS204,Design and Analysis of Algorithms
+24CS073,Rohan Soni,EC202,Signals and Systems
+24CS073,Rohan Soni,HS202,Communication Skills
+24CS074,Siddharth Patel,CS201,Data Structures
+24CS074,Siddharth Patel,CS203,Object Oriented Programming
+24CS074,Siddharth Patel,CS204,Design and Analysis of Algorithms
+24CS074,Siddharth Patel,EC202,Signals and Systems
+24CS074,Siddharth Patel,CS206,Database Systems
+24CS075,Pooja Gupta,CS201,Data Structures
+24CS075,Pooja Gupta,EC201,Digital Logic
+24CS075,Pooja Gupta,HS201,Economics
+24CS075,Pooja Gupta,CS204,Design and Analysis of Algorithms
+24CS075,Pooja Gupta,EC202,Signals and Systems
+24CS075,Pooja Gupta,CS206,Database Systems
+24CS076,Isha Jain,EC201,Digital Logic
+24CS076,Isha Jain,CS203,Object Oriented Programming
+24CS076,Isha Jain,CS204,Design and Analysis of Algorithms
+24CS076,Isha Jain,CS206,Database Systems
+24CS077,Neha Verma,MA201,Discrete Mathematics
+24CS077,Neha Verma,CS202,Computer Architecture
+24CS077,Neha Verma,CS203,Object Oriented Programming
+24CS077,Neha Verma,CS204,Design and Analysis of Algorithms
+24CS077,Neha Verma,CS205,Operating Systems
+24CS077,Neha Verma,CS206,Database Systems
+24CS078,Kabir Chouhan,CS201,Data Structures
+24CS078,Kabir Chouhan,CS202,Computer Architecture
+24CS078,Kabir Chouhan,CS203,Object Oriented Programming
+24CS078,Kabir Chouhan,CS204,Design and Analysis of Algorithms
+24CS078,Kabir Chouhan,EC202,Signals and Systems
+24CS078,Kabir Chouhan,HS202,Communication Skills
+24CS079,Isha Yadav,MA201,Discrete Mathematics
+24CS079,Isha Yadav,EC201,Digital Logic
+24CS079,Isha Yadav,HS201,Economics
+24CS079,Isha Yadav,MA202,Probability
+24CS079,Isha Yadav,EC202,Signals and Systems
+24CS079,Isha Yadav,CS206,Database Systems
+24CS080,Karan Patel,MA201,Discrete Mathematics
+24CS080,Karan Patel,EC201,Digital Logic
+24CS080,Karan Patel,HS201,Economics
+24CS080,Karan Patel,MA202,Probability
+24CS080,Karan Patel,CS205,Operating Systems
+24CS080,Karan Patel,HS202,Communication Skills
+24CS081,Kavya Dubey,MA201,Discrete Mathematics
+24CS081,Kavya Dubey,CS202,Computer Architecture
+24CS081,Kavya Dubey,CS203,Object Oriented Programming
+24CS081,Kavya Dubey,MA202,Probability
+24CS081,Kavya Dubey,CS205,Operating Systems
+24CS081,Kavya Dubey,HS202,Communication Skills
+24CS082,Riya Joshi,CS201,Data Structures
+24CS082,Riya Joshi,CS202,Computer Architecture
+24CS082,Riya Joshi,CS204,Design and Analysis of Algorithms
+24CS082,Riya Joshi,EC202,Signals and Systems
+24CS082,Riya Joshi,CS206,Database Systems
+24CS083,Nikhil Jain,CS201,Data Structures
+24CS083,Nikhil Jain,EC201,Digital Logic
+24CS083,Nikhil Jain,HS201,Economics
+24CS083,Nikhil Jain,MA202,Probability
+24CS083,Nikhil Jain,HS202,Communication Skills
+24CS084,Diya Agrawal,MA201,Discrete Mathematics
+24CS084,Diya Agrawal,EC201,Digital Logic
+24CS084,Diya Agrawal,CS203,Object Oriented Programming
+24CS084,Diya Agrawal,CS204,Design and Analysis of Algorithms
+24CS084,Diya Agrawal,EC202,Signals and Systems
+24CS084,Diya Agrawal,HS202,Communication Skills
+24CS085,Isha Gupta,MA201,Discrete Mathematics
+24CS085,Isha Gupta,EC201,Digital Logic
+24CS085,Isha Gupta,CS203,Object Oriented Programming
+24CS085,Isha Gupta,MA202,Probability
+24CS085,Isha Gupta,CS206,Database Systems
+24CS086,Ishaan Verma,MA201,Discrete Mathematics
+24CS086,Ishaan Verma,EC201,Digital Logic
+24CS086,Ishaan Verma,HS201,Economics
+24CS086,Ishaan Verma,MA202,Probability
+24CS086,Ishaan Verma,CS205,Operating Systems
+24CS086,Ishaan Verma,CS206,Database Systems
+24CS087,Kabir Patel,CS201,Data Structures
+24CS087,Kabir Patel,EC201,Digital Logic
+24CS087,Kabir Patel,HS201,Economics
+24CS087,Kabir Patel,CS204,Design and Analysis of Algorithms
+24CS087,Kabir Patel,EC202,Signals and Systems
+24CS087,Kabir Patel,HS202,Communication Skills
+24CS088,Rahul Agrawal,MA201,Discrete Mathematics
+24CS088,Rahul Agrawal,CS202,Computer Architecture
+24CS088,Rahul Agrawal,CS203,Object Oriented Programming
+24CS088,Rahul Agrawal,CS204,Design and Analysis of Algorithms
+24CS088,Rahul Agrawal,EC202,Signals and Systems
+24CS088,Rahul Agrawal,HS202,Communication Skills
+24CS089,Rahul Sharma,MA201,Discrete Mathematics
+24CS089,Rahul Sharma,CS202,Computer Architecture
+24CS089,Rahul Sharma,HS201,Economics
+24CS089,Rahul Sharma,CS204,Design and Analysis of Algorithms
+24CS089,Rahul Sharma,CS206,Database Systems
+24CS090,Neha Dubey,CS201,Data Structures
+24CS090,Neha Dubey,EC201,Digital Logic
+24CS090,Neha Dubey,HS201,Economics
+24CS090,Neha Dubey,EC202,Signals and Systems
+24CS090,Neha Dubey,HS202,Communication Skills
