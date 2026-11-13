@@ -105,17 +105,33 @@ applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "li
 themeBtn.addEventListener("click", () => applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light", true));
 
 /* ---------- DATA tab */
-document.querySelectorAll(".file input").forEach(inp => inp.addEventListener("change", () => {
-  const files = [...inp.files], label = inp.closest(".file");
-  label.classList.remove("has"); void label.offsetWidth;          // remove, reflow, add again so the tick pops every time
+/* Chosen files are kept here, not in the file box itself, so each one can be removed with its own ×.
+   Students can take several files: choosing more adds to the list. Rooms and schedule take one file: choosing again swaps it. */
+const PICKED = { students: [], rooms: [], schedule: [] };
+const sameFile = (a, b) => a.name === b.name && a.size === b.size && a.lastModified === b.lastModified;
+function renderPicked(inp) {
+  const label = inp.closest(".file"), files = PICKED[inp.name], box = $(".file-name", label);
   label.classList.toggle("has", files.length > 0);
-  $(".file-name", label).textContent = !files.length ? "Choose file" : files.length === 1 ? files[0].name : `${files.length} files: ` + files.map(f => f.name).join(", ");
+  box.replaceChildren();
+  if (!files.length) { box.textContent = "Choose file"; return; }
+  files.forEach((f, i) => box.append(h("span", { class: "pick" }, h("span", { class: "pick-name" }, f.name),
+    h("button", { type: "button", class: "x", title: "Remove " + f.name, "aria-label": "Remove " + f.name,
+      onclick: ev => { ev.preventDefault(); ev.stopPropagation(); files.splice(i, 1); renderPicked(inp); } }, "×"))));
+  if (inp.multiple) box.append(h("span", { class: "pick-add" }, "+ Add another file"));
+}
+document.querySelectorAll(".file input").forEach(inp => inp.addEventListener("change", () => {
+  const chosen = [...inp.files];
+  if (!chosen.length) return;
+  if (inp.multiple) chosen.forEach(f => { if (!PICKED[inp.name].some(g => sameFile(f, g))) PICKED[inp.name].push(f); });
+  else PICKED[inp.name] = [chosen[0]];
+  inp.value = "";                                      // so the same file can be chosen again after removing it
+  renderPicked(inp);
 }));
 const isPdf = f => /\.pdf$/i.test(f.name) || f.type === "application/pdf";
 /* PDFs are routed to the preview screen; CSV/Excel go straight in (they are already tables). */
 $("#upload-form").addEventListener("submit", e => {
   e.preventDefault();
-  const form = e.target, pick = n => [...form.elements[n].files].filter(f => f.size > 0);
+  const pick = n => PICKED[n].filter(f => f.size > 0);
   const sFiles = pick("students"), rFiles = pick("rooms"), cFiles = pick("schedule");
   if (!sFiles.length && !rFiles.length && !cFiles.length) return showAlert("Choose at least one file first.");
   if (rFiles.length > 1 || cFiles.length > 1) return showAlert("Choose one rooms file and one schedule file at most.");
@@ -390,7 +406,7 @@ function roomCard(r, rule) {
   return h("div", { class: "card room" },
     h("div", { class: "room-head" }, h("h3", {}, `${r.room_id} · ${r.name}`, r.provisional ? provTag() : null),
       h("small", {}, `${r.students} students · ${r.rows}×${r.cols} · ${free} empty` + (ADVANCED ? ` · solved by ${r.strategy} (${r.search_nodes} search steps)` : ""))),
-    h("div", { class: "board" }, "FRONT OF ROOM (row 1)"), h("div", { class: "gridscroll" }, grid),
+    h("div", { class: "gridscroll" }, h("div", { class: "stage" }, h("div", { class: "board" }, "FRONT OF ROOM (row 1)"), grid)),
     bad.size ? h("p", { class: "note bad" }, "Red outlines mark seats that break the rule.") : null);
 }
 
@@ -420,11 +436,6 @@ function setRooms(list) {
 function renderRooms() {
   const out = $("#rooms-out"); out.replaceChildren();
   if (!R.draft.length) return;
-  const anyProv = R.draft.some(r => r.provisional);
-  out.append(h("div", { class: "card" },
-    h("h2", {}, "Rooms"),
-    h("p", { class: "muted" }, "Pick a room, then click a seat to switch it on or off (you can also drag across several). Click a row or column number to switch the whole line. Row 1 is the front of the room. Two students on the same bench count as sitting next to each other."),
-    anyProv ? h("div", { class: "alert warn", style: "margin:0" }, "Provisional layouts: the rooms marked Provisional are estimates until you confirm them. Correct each one here, then tick “Layout checked against the real room”.") : null));
   out.append(h("div", { class: "layout" }, h("div", { id: "room-list", class: "sessions" }), h("div", { id: "room-editor" })));
   renderRoomList(); renderRoomEditor();
 }
@@ -480,15 +491,12 @@ function renderRoomEditor() {
     h("div", { class: "fields" }, field("Room ID", "room_id", { maxlength: 20 }), field("Name", "name", { maxlength: 40 }),
       h("label", { class: "check" }, h("input", { type: "checkbox", checked: room.available, onchange: ev => { room.available = ev.target.checked; renderRoomList(); } }), "Use this room"),
       h("label", { class: "check" }, h("input", { type: "checkbox", checked: !room.provisional, onchange: ev => { room.provisional = !ev.target.checked; renderRoomList(); } }), "Layout checked against the real room")),
-    h("div", { class: "board" }, "FRONT OF ROOM (row 1)"),
-    h("div", { class: "gridscroll" }, grid),
+    h("div", { class: "gridscroll" }, h("div", { class: "stage" }, h("div", { class: "board" }, "FRONT OF ROOM (row 1)"), grid)),
     h("div", { class: "toolbar" },
       h("button", { class: "btn small", onclick: () => resize(1, 0) }, "+ Row"), h("button", { class: "btn small", onclick: () => resize(-1, 0) }, "− Row"),
       h("button", { class: "btn small", onclick: () => resize(0, 1) }, "+ Column"), h("button", { class: "btn small", onclick: () => resize(0, -1) }, "− Column"),
       h("span", { class: "spacer" }),
-      h("button", { class: "btn small", onclick: () => { if (R.draft.length < 2) return showAlert("At least one room is needed."); if (!confirm(`Delete ${room.room_id}?`)) return; R.draft.splice(R.sel, 1); R.sel = Math.max(0, R.sel - 1); renderRoomList(); renderRoomEditor(); } }, "Delete this room")),
-    h("label", { class: "fields", style: "display:block;margin:6px 0 0" }, h("span", { style: "font-size:.8rem;color:var(--muted);font-weight:500" }, "Notes"),
-      h("textarea", { oninput: ev => { room.note = ev.target.value; } }, room.note))));
+      h("button", { class: "btn small", onclick: () => { if (R.draft.length < 2) return showAlert("At least one room is needed."); if (!confirm(`Delete ${room.room_id}?`)) return; R.draft.splice(R.sel, 1); R.sel = Math.max(0, R.sel - 1); renderRoomList(); renderRoomEditor(); } }, "Delete this room"))));
   box.append(h("div", { class: "card toolbar", style: "margin-top:0" },
     h("button", { class: "btn primary", id: "rooms-save", onclick: ev => busy(ev.target, "Saving…", async () => {
       setRooms((await api("/api/rooms", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ rooms: R.draft }) })).rooms);
@@ -500,35 +508,86 @@ function renderRoomEditor() {
 }
 
 /* ---------- TIMETABLE tab: one row per paper; edit any cell, add or delete rows, save */
-const T = { rows: [], saved: "", days: 0, warnings: [] };
+const T = { rows: [], saved: "", days: 0, warnings: [], edit: new Set(), groupBy: "date" };
 async function loadTimetable() {
   try { setTimetable(await api("/api/timetable")); } catch (e) { showAlert(e.message); }
 }
 function setTimetable(d) {
   T.rows = d.rows.map(r => ({ date: r.date, slot: r.slot, course: r.course, course_name: r.course_name, group: r.group || "" }));
-  T.saved = JSON.stringify(T.rows); T.days = d.days; T.warnings = d.warnings || [];
+  T.saved = JSON.stringify(T.rows); T.days = d.days; T.warnings = d.warnings || []; T.edit = new Set();
   renderTimetable();
 }
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
+/* Rows read as plain text. The pencil opens one row for editing (inputs), the tick closes it again.
+   The table is shown in groups (by date unless another field is picked). Grouping only changes the view, not the saved rows. */
+const TT_FIELDS = [["date", "Date"], ["slot", "Time"], ["course", "Paper code"], ["course_name", "Paper name"], ["group", "Group"]];
+const TT_ICON = {
+  edit: '<path d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4"/>',
+  done: '<path d="M5 12.5l4.5 4.5L19 7"/>',
+};
+const ttIcon = name => { const s = h("span", { class: "ico", "aria-hidden": "true" }); s.innerHTML = `<svg viewBox="0 0 24 24">${TT_ICON[name]}</svg>`; return s; };
+const byText = (a, b) => (a || "￿").localeCompare(b || "￿", undefined, { numeric: true, sensitivity: "base" });
 function renderTimetable() {
   const out = $("#timetable-out"); out.replaceChildren();
-  const cell = (row, key, cls, type = "text") => h("td", { class: cls }, h("input", { type, value: row[key], "aria-label": key.replace("_", " "),
-    oninput: ev => { row[key] = ev.target.value; updateCount(); } }));
   const count = h("span", { class: "muted", style: "margin:0" });
   function updateCount() { count.textContent = `${T.rows.filter(r => r.date && r.course).length} papers on ${new Set(T.rows.filter(r => r.date && r.course).map(r => r.date)).size} exam days`; }
-  const body = h("tbody", {}, T.rows.map((row, i) => h("tr", {},
-    cell(row, "date", "c-date", ISO.test(row.date) || !row.date ? "date" : "text"), cell(row, "slot", "c-slot"), cell(row, "course", "c-code"),
-    cell(row, "course_name", "c-name"), cell(row, "group", "c-grp"),
-    h("td", {}, h("button", { class: "x", title: "Delete this row", "aria-label": `Delete row ${i + 1}`, onclick: () => { T.rows.splice(i, 1); renderTimetable(); } }, "×")))));
+  const close = row => { T.edit.delete(row); renderTimetable(); };
+  const open = row => {
+    T.edit.add(row); renderTimetable();
+    const tr = [...$("#timetable-out tbody").children].find(x => x._row === row);
+    const first = tr && tr.querySelector("input"); if (first) first.focus();
+  };
+  const del = row => { T.edit.delete(row); T.rows.splice(T.rows.indexOf(row), 1); renderTimetable(); };
+  const label = (key, v) => !v ? (key === "date" ? "No date yet" : "Not filled in") : key === "date" ? fmtDate(v) : v;
+  const actions = (row, editing) => h("td", { class: "c-act" }, h("span", { class: "acts" },
+    editing
+      ? h("button", { class: "icon ok", type: "button", title: "Done editing", "aria-label": "Done editing this row", onclick: () => close(row) }, ttIcon("done"))
+      : h("button", { class: "icon", type: "button", title: "Edit this row", "aria-label": `Edit ${row.course || "this row"}`, onclick: () => open(row) }, ttIcon("edit")),
+    h("button", { class: "x", type: "button", title: "Delete this row", "aria-label": `Delete ${row.course || "this row"}`, onclick: () => del(row) }, "×")));
+  const editRow = row => {
+    const cell = (key, cls, type = "text") => h("td", { class: cls }, h("input", { type, value: row[key], "aria-label": key.replace("_", " "),
+      oninput: ev => { row[key] = ev.target.value; updateCount(); },
+      onkeydown: ev => { if (ev.key === "Enter") { ev.preventDefault(); close(row); } } }));
+    const tr = h("tr", { class: "editing" },
+      cell("date", "c-date", ISO.test(row.date) || !row.date ? "date" : "text"), cell("slot", "c-slot"), cell("course", "c-code"),
+      cell("course_name", "c-name"), cell("group", "c-grp"), actions(row, true));
+    tr._row = row; return tr;
+  };
+  const readRow = row => {
+    const tr = h("tr", { class: "read", ondblclick: () => open(row) },
+      h("td", { class: "c-date" + (row.date ? "" : " empty") }, label("date", row.date)),
+      h("td", { class: "c-slot" + (row.slot ? "" : " empty") }, label("slot", row.slot)),
+      h("td", { class: "c-code" }, row.course ? h("span", { class: "code" }, row.course) : h("span", { class: "empty" }, "No code")),
+      h("td", { class: "c-name" + (row.course_name ? "" : " empty") }, label("course_name", row.course_name)),
+      h("td", { class: "c-grp" }, row.group ? h("span", { class: "grp-tag" }, row.group) : h("span", { class: "empty" }, "No group")),
+      actions(row, false));
+    tr._row = row; return tr;
+  };
+  // group the rows; groups and the rows inside them are in date order (other fields: A to Z, numbers in number order)
+  const key = T.groupBy, groups = new Map();
+  const order = [...T.rows].sort((a, b) => byText(a[key], b[key]) || byText(a.date, b.date) || byText(a.slot, b.slot) || byText(a.course, b.course));
+  order.forEach(r => { const k = r[key] || ""; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(r); });
+  const body = h("tbody", {});
+  groups.forEach((rows, k) => {
+    body.append(h("tr", { class: "grp" }, h("td", { colspan: 6 }, h("span", { class: "grp-name" }, label(key, k)),
+      h("span", { class: "grp-count" }, `${rows.length} paper${rows.length === 1 ? "" : "s"}`))));
+    rows.forEach(r => body.append(T.edit.has(r) ? editRow(r) : readRow(r)));
+  });
+  if (!T.rows.length) body.append(h("tr", {}, h("td", { colspan: 6, class: "empty-msg" }, "No papers yet. Add a row to start.")));
+  const groupSel = h("select", { "aria-label": "Group the timetable by", onchange: ev => { T.groupBy = ev.target.value; renderTimetable(); } },
+    TT_FIELDS.map(([k, l]) => h("option", { value: k, selected: k === T.groupBy }, l)));
   updateCount();
   out.append(h("div", { class: "card" },
-    h("h2", {}, "Exam timetable"),
-    h("p", { class: "muted" }, "One row per paper. Check every row against the printed timetable: the dates were matched to the papers by row order, so a slip is possible. Change any cell to correct it. The seating plan uses this table."),
+    h("div", { class: "tt-head" }, h("h2", {}, "Exam timetable"), h("span", { class: "spacer" }),
+      h("label", { class: "group-by" }, "Group by", groupSel)),
     T.warnings.length ? h("ul", { class: "warns" }, T.warnings.map(w => h("li", {}, w))) : null,
     h("div", { class: "tbl-wrap" }, h("table", { class: "tt" }, h("thead", {}, h("tr", {}, ["Date", "Time", "Paper code", "Paper name", "Group", ""].map(x => h("th", {}, x)))), body)),
     h("div", { class: "toolbar" },
-      h("button", { class: "btn small", onclick: () => { const last = T.rows[T.rows.length - 1] || {}; T.rows.push({ date: "", slot: last.slot || "", course: "", course_name: "", group: last.group || "" }); renderTimetable(); const inputs = $$all("#timetable-out tbody tr:last-child input"); if (inputs[0]) inputs[0].focus(); } }, "+ Add row"),
-      h("button", { class: "btn small", onclick: () => { T.rows.sort((a, b) => (a.date || "￿").localeCompare(b.date || "￿")); renderTimetable(); } }, "Sort by date"),
+      h("button", { class: "btn small", onclick: () => {
+        const last = T.rows[T.rows.length - 1] || {};
+        const row = { date: "", slot: last.slot || "", course: "", course_name: "", group: last.group || "" };
+        T.rows.push(row); open(row);
+      } }, "+ Add row"),
       h("span", { class: "spacer" }), count),
     h("details", { class: "notes" }, h("summary", {}, "Notes about this timetable"), h("ul", {},
       h("li", {}, "Papers are told apart by their code. Papers with the same name but different codes (for example Forecasting Methods DS5A-601, DS5B-603 and DS6A-404) are treated as different papers. Two groups that share one code (DS6A-603 on 30 Nov) are one paper."),
@@ -543,7 +602,6 @@ function renderTimetable() {
     h("button", { class: "btn", onclick: ev => { if (!confirm("Go back to the timetable as first typed in? Your changes to the timetable will be lost.")) return;
       busy(ev.target, "Resetting…", async () => { setTimetable(await api("/api/timetable/reset", { method: "POST" })); await afterEdit(); showAlert("Timetable reset.", "info"); }); } }, "Reset to printed timetable")));
 }
-const $$all = (s, r = document) => [...r.querySelectorAll(s)];
 
 /* ---------- EXPERIMENTS tab */
 const LAB = ADVANCED ? [

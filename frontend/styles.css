@@ -128,10 +128,16 @@ textarea{width:100%;resize:vertical;min-height:70px}
 .file:focus-within{outline:2px solid var(--focus);outline-offset:3px}
 .file input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
 .file-title{font-weight:700}.hint{font-size:.8rem;color:var(--muted)}
-.file-name{margin-top:8px;font-size:.88rem;color:var(--accent-text);word-break:break-all;font-weight:500}
+.file-name{margin-top:auto;padding-top:8px;font-size:.88rem;color:var(--accent-text);word-break:break-all;font-weight:500}
 .file.has{border-style:solid;border-color:var(--ok-line)}
 .file.has .file-name{color:var(--ok)}
-.file.has .file-name::before{content:"✓";display:inline-grid;place-items:center;width:19px;height:19px;margin-right:8px;border-radius:50%;background:var(--ok);color:var(--ok-ink);font-size:.7rem;font-weight:800;animation:pop var(--t) var(--ease)}
+.file.has .file-name{display:flex;flex-direction:column;gap:6px}
+.pick{display:flex;align-items:flex-start;gap:8px;min-width:0}
+.pick::before{content:"✓";flex:none;display:inline-grid;place-items:center;width:19px;height:19px;margin-top:1px;border-radius:50%;background:var(--ok);color:var(--ok-ink);font-size:.7rem;font-weight:800;animation:pop var(--t) var(--ease)}
+.pick-name{flex:1;min-width:0}
+.pick .x{position:relative;z-index:2;flex:none;font:inherit;font-size:1.1rem;line-height:1;border:0;background:none;color:var(--muted);cursor:pointer;padding:0 6px 2px;border-radius:6px;transition:transform var(--t-fast) var(--ease)}
+.pick .x:hover{color:var(--bad);background:var(--bad-bg)} .pick .x:active{transform:scale(.9)}
+.pick-add{font-size:.82rem;color:var(--accent-text);font-weight:600}
 .row{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
 
 /* ---------- alerts (inline) and toasts ---------- */
@@ -186,7 +192,8 @@ tbody tr:hover td{background:var(--row-hover)}
 .room{margin-bottom:20px}
 .room-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
 .room-head small{color:var(--muted)}
-.board{margin:14px 0 12px 34px;text-align:center;font-size:.72rem;font-weight:600;color:var(--muted);border-top:3px solid var(--accent-text);border-radius:3px;padding-top:5px;letter-spacing:.1em}
+.stage{width:max-content;margin:14px auto 0}
+.board{margin:0 0 12px 34px;text-align:center;font-size:.72rem;font-weight:600;color:var(--muted);border-top:3px solid var(--accent-text);border-radius:3px;padding-top:5px;letter-spacing:.1em}
 .gridscroll{overflow-x:auto;padding:4px 4px 8px}
 .grid{display:grid;gap:6px;width:max-content}
 .rn,.cn{font-size:.72rem;color:var(--muted);display:flex;align-items:center;justify-content:center}
@@ -211,7 +218,25 @@ tbody tr:hover td{background:var(--row-hover)}
 .chip .x{font:inherit;border:0;background:none;color:var(--muted);cursor:pointer;font-size:1rem;padding:0 4px;border-radius:6px}.chip .x:hover{color:var(--bad)}
 
 /* ---------- timetable and previews ---------- */
-.tt td{padding:6px 7px;vertical-align:middle}.tt input[type=text],.tt input[type=date]{width:100%;background:var(--bg);padding:8px 10px}
+.tt-head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:10px 16px;margin-bottom:16px}.tt-head h2{margin:0}
+.group-by{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--muted);font-weight:500}.group-by select{padding:8px 12px;width:auto;min-width:160px}
+.tt td{padding:12px 14px;vertical-align:middle}
+.tt tr.read td{transition:background var(--t-fast) var(--ease)}
+.tt .empty{color:var(--muted);font-style:italic}
+.tt .code{font-variant-numeric:tabular-nums;font-weight:600;letter-spacing:.01em}
+.tt .grp-tag{display:inline-block;padding:2px 10px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line);font-size:.82rem;white-space:nowrap}
+.tt tr.grp td{background:var(--surface-2);padding:9px 14px;border-bottom:1px solid var(--line)}
+.tt tbody tr.grp:hover td{background:var(--surface-2)}
+.tt .grp-name{font-weight:700;color:var(--accent-text)} .tt .grp-count{margin-left:10px;font-size:.8rem;color:var(--muted)}
+.tt tr.editing td{background:var(--accent-soft);padding:6px 7px}
+.tt tbody tr.editing:hover td{background:var(--accent-soft)}
+.tt input[type=text],.tt input[type=date]{width:100%;background:var(--bg);padding:8px 10px}
+.tt .c-act{width:1%;white-space:nowrap;text-align:right}.tt .acts{display:inline-flex;gap:2px;align-items:center}
+.tt .icon{display:inline-grid;place-items:center;width:32px;height:32px;border:0;background:none;color:var(--muted);cursor:pointer;border-radius:8px;padding:0;transition:transform var(--t-fast) var(--ease)}
+.tt .icon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.tt .icon:hover{color:var(--accent-text);background:var(--accent-soft)} .tt .icon:active{transform:scale(.9)}
+.tt .icon.ok{color:var(--ok)} .tt .icon.ok:hover{background:var(--ok-bg);color:var(--ok)}
+.tt .icon:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .tt .c-date{min-width:160px}.tt .c-slot{min-width:150px}.tt .c-code{min-width:120px}.tt .c-name{min-width:240px}.tt .c-grp{min-width:130px}
 .tt .x{font:inherit;border:0;background:none;color:var(--muted);cursor:pointer;font-size:1.2rem;padding:2px 9px;border-radius:8px}.tt .x:hover{color:var(--bad);background:var(--bad-bg)}
 details.notes{margin-top:16px;font-size:.9rem;color:var(--muted)}details.notes summary{cursor:pointer;color:var(--accent-text);font-weight:600}
