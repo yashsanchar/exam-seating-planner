@@ -7,3 +7,4 @@
 6. **Step 7 (theme):** dark is the default. `:root[data-theme="light"]` in `styles.css` overrides the same tokens; hatch, shimmer and top-bar colours are now variables too. `--accent-text` is the text-safe amber (WCAG AA on the light cards). The toggle code is at the top of `app.js`; the no-flash script is in the `<head>` of `index.html`.
 7. **PDF check screen:** the line under "This list is for" says whether loading replaces an existing list or adds a new one.
 
+8. **Cosmetic pass:** timetable rows read as text; the pencil opens one row for editing and the tick closes it. The table is grouped by date by default ("Group by" picks another field; it only changes the view). Room grids sit centred under the "front of room" line. Each chosen file has its own × on the Data tab (student files add up, rooms/schedule swap). The Rooms help card, the provisional banner, the room Notes box and the timetable intro text are gone (a room's note is still kept and saved).
